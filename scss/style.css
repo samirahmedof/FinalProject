@@ -574,4 +574,7 @@ footer {
   #mainCategories .pag .selected:hover {
     background: initial; }
 
+.shopIndex {
+  background-image: url(../img/ftnss2.jpg) !important; }
+
 /*# sourceMappingURL=style.css.map */
