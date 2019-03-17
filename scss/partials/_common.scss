@@ -1,0 +1,23 @@
+body {
+    font-family: $font;
+    color: $black;
+    background-color: $bg;
+    // font-size: $text;
+}
+a {
+    color: $black;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+        color: $black;
+    }
+}
+ul {
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+section {
+    padding: 60px 0px;
+}

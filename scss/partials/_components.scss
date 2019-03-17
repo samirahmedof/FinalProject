@@ -1,0 +1,136 @@
+.iBtn {
+    color: $main;
+    padding: 12px 65px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.5s;
+    position: relative;
+    border: 1px solid $main;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background: $main;
+        right: 0;
+        top: 0;
+        transition: all 0.5s;
+        z-index: -1;
+    }
+    &:hover {
+        color: $white;
+        &::before {
+            left: 0%;
+            width: 100%;
+            right: auto;
+        }
+    }
+}
+
+
+.iCard {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
+    transition: all 0.5s;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+    .cardBg {
+        transition:  all 0.5s;
+        &::before {
+            transition:  all 0.5s;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0000008f;
+            left: 0;
+        }
+    }
+    h3 ,h2 {
+        font-weight: 700;
+        position: absolute;
+        top: 45%;
+        display: inline-block;
+        width: 100%;
+        left: 0;
+        a {
+            color: $white;
+        }
+    }
+    &:hover {
+        .cardBg {
+            transform: scale(1.2);
+            &::before {
+                background: #00000033;
+            }
+        }
+    }
+}
+.iHead {
+    margin-bottom: 70px;
+    position: relative;
+    line-height: 8px;
+    h2 {
+        font-weight: 600;
+    }
+    span {
+        width: 70%;
+        height: 2px;
+        background: $main;
+        display: inline-block;
+    }
+    .sec {
+        width: 50%;        
+    }
+}
+
+
+.scrolled {
+    background: $white;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    color: $black;
+    position: fixed;
+    a {
+        color: $black!important;
+    }
+    h1 {
+        a {
+            color: $main!important;
+        }
+    }
+    li {
+        &::before , &::after {
+            background: $main!important;
+        }
+    }
+    .iDown {
+        li {
+            a {
+                &:hover {
+                    transform: translate(5px);
+                    color: $main!important;
+                }
+                
+            }
+                
+        }
+    }
+    .iBtn {
+        color: $main!important;
+        &:hover {
+            color: $white!important;
+        }
+    }
+    
+}
+.iHeight {
+    max-height: 170px!important;
+    max-width: initial!important;
+}

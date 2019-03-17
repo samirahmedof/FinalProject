@@ -1,0 +1,266 @@
+//header
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    .registration {
+        position: absolute;
+        z-index: 10000;
+        .sign-in {
+            background: #000000b5;
+            height: 100vh;
+            .sign {
+                width: 100%;
+                background: $white;
+                padding: 60px;
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 2%;
+                    top: 2%;
+                    font-size: 25px;
+                    color: #8080807a;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $main;
+                    }
+                }
+                button.iBtn {
+                    background: $main;
+                    color: $white!important;
+                    &::before {
+                        content: "";
+                    }
+                }
+                p {
+                    margin-top: 1rem;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 14px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 35%;
+                        height: 1px;
+                        background: #bb0000;
+                        left: 0;
+                        top: 45%;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 35%;
+                        height: 1px;
+                        background: #bb0000;
+                        right: 0;
+                        top: 45%;
+                    }
+                }
+                span.iBtn {
+                    font-size: 14px;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .foxholder-form__input--effect-11 ~ .foxholder-form__helper, .foxholder-form__textarea--effect-11 ~ .foxholder-form__helper {
+            background: $main;
+        }
+    }
+    .col-lg-2 {
+        h1 {
+            font-family: 'Audiowide', cursive;
+            a {
+                color: white;
+            }
+        }
+        
+    }
+    .col-lg-8{
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                position: relative;
+                a {
+                    color: $white;
+                    padding: 5px 0px;
+                }
+                .iDown {
+                    position: absolute;
+                    display: inline-block;
+                    width: 180%;
+                    left: 0;
+                    background: $white;
+                    box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
+                    ul {
+                        padding: 10px;
+                        font-size: 14px;
+                    }
+                    
+                    li {
+                        transition: all 0.3s;
+                        width: 100%;
+                        margin: 0;
+                        padding: 5px 0px;
+                        border-bottom: 1px solid #80808059;
+                        a {
+                            width: 100%;
+                            color: $black;
+                            transition: all 0.3s;
+                            &::before {
+                                transition: all 0.3s;
+                            }
+                        }
+                        i {
+                            color: $main;
+                        }
+                        &::before {
+                            content: none;
+                        }
+                        &::after {
+                            content: none;
+                        }
+                        a {
+                            &:hover {
+                                transform: translate(5px);
+                                color: $main;
+                                &::before {
+                                    content: "\f105";
+                                    font-family: 'Font Awesome 5 Free';
+                                    margin-left: 10px;
+                                    margin-right: 0;
+                                    position: absolute;
+                                    top: 6px;
+                                    left: -20px;
+                                    font-size: 12px;
+                                    font-weight: 900;
+                                }
+                            }
+                            
+                        }
+                            
+                    }
+                    display: none;
+                   
+
+                }
+                .iSubDrop {
+                    position: relative;
+                    .iSub {
+                        position: absolute;
+                        background: $white;
+                        box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
+                        right: -190px;
+                        top: 0px;
+                        display: inline-block;
+                        width: 100%;
+                        display: none;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 2px;
+                    background: $white;
+                    transition: all 0.5s;
+                
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 2px;
+                    background: $white; 
+                    bottom: 0;
+                    right: 0;
+                    transition: all 0.5s;
+                
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .sign {
+
+            .iBtn {
+                cursor: pointer;
+                font-size: 16px;
+                padding: 5px 5px;
+                color: $main;
+                font-weight: bold;
+                &::before , &::after {
+                    content: none;
+                }
+                &:hover {
+                    background: $main;
+                    color: $white;
+                }
+            }
+            &::before , &::after {
+                content: none;
+            }
+        }
+    }
+    
+}
+
+//footer
+footer {
+    border-top: 1px solid #80808059;
+    padding: 20px 0px;
+    .col-lg-6  {
+        h4 {
+            font-family: 'Audiowide', cursive !important;
+            display: inline-block;
+            a {
+                color: $main;
+            }
+        }
+        p {
+            display: inline-block;
+            font-size: 13px;
+            margin-left: 15px;
+        }
+        .socials {
+            ul {
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                margin-left: 5px;
+                a {
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-right: 0;
+                    padding: 0;
+                    text-align: center;
+                    width: 40px;
+                    background-color: $black;
+                    color: $white;
+                    border-radius: 100%;
+                    transition: all 0.5s;
+                    i {
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        background: $main;
+                    }
+                }
+                
+            }
+        }
+    }
+}
