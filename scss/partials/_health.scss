@@ -1,0 +1,16 @@
+.healthIndex {
+    background-image: url(../img/ftnss.jpg)!important;
+}
+#mainHealth {
+    .col-lg-3 {
+        transition: all 0.3s;
+        padding: 10px;
+    }
+    .activeHover {
+        transform: scale(1.12);
+        z-index: 99;
+    }
+}
+.bodyBg {
+    background: #0000008f;
+}

@@ -1,0 +1,26 @@
+#mainSearch {
+    .searching {
+        border-left: 2px solid $main;
+    }
+    .foxholder-form__label {
+        cursor: auto;
+    }
+    .foxholder-form__input--effect-2.is-active {
+        border-bottom-color: $main;
+    }
+    input:focus {
+        background: transparent;
+    }
+
+    .categories {
+        display: inline-block;
+        select {
+            padding: 10px 3px;
+            border-color: #bb0000;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

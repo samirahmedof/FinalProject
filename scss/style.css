@@ -1,7 +1,8 @@
 body {
   font-family: "Comfortaa", cursive;
   color: #333;
-  background-color: #f8f9fa; }
+  background-color: #f8f9fa;
+  transition: all 0.5s; }
 
 a {
   color: #333;
@@ -576,5 +577,35 @@ footer {
 
 .shopIndex {
   background-image: url(../img/ftnss2.jpg) !important; }
+
+.healthIndex {
+  background-image: url(../img/ftnss.jpg) !important; }
+
+#mainHealth .col-lg-3 {
+  transition: all 0.3s;
+  padding: 10px; }
+#mainHealth .activeHover {
+  transform: scale(1.12);
+  z-index: 99; }
+
+.bodyBg {
+  background: #0000008f; }
+
+#mainSearch .searching {
+  border-left: 2px solid #bb0000; }
+#mainSearch .foxholder-form__label {
+  cursor: auto; }
+#mainSearch .foxholder-form__input--effect-2.is-active {
+  border-bottom-color: #bb0000; }
+#mainSearch input:focus {
+  background: transparent; }
+#mainSearch .categories {
+  display: inline-block; }
+  #mainSearch .categories select {
+    padding: 10px 3px;
+    border-color: #bb0000;
+    border-radius: 5px; }
+    #mainSearch .categories select:focus {
+      outline: none; }
 
 /*# sourceMappingURL=style.css.map */

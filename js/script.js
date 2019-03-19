@@ -55,15 +55,23 @@ $(document).ready(function () {
                 }
         })
 
-        $("select").on('change', function () {
+        $("select.kombat").on('change', function () {
                 if (this.value == 3) {
                         $(".sport-type").removeClass("d-none");
                 }
                 else {
-                        if(!($(".sport-type").hasClass("d-none"))) {
+                        if (!($(".sport-type").hasClass("d-none"))) {
                                 $(".sport-type").addClass("d-none");
                         }
                 }
         });
+
+        $("#mainHealth .iTilt").hover(function () {
+                $(this).parent().addClass("activeHover");
+                $("body").addClass("bodyBg")
+        }, function () {
+                $(this).parent().removeClass("activeHover");
+                $("body").removeClass("bodyBg")
+        })
 
 })
