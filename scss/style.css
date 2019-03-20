@@ -47,18 +47,78 @@ section {
       width: 100%;
       right: auto; }
 
-.iCard {
+.iCard .card {
+  transition: all 0.3s;
+  width: initial;
+  height: 100%; }
+  .iCard .card .photo {
+    height: 50%;
+    overflow: hidden; }
+    .iCard .card .photo img {
+      height: 100%;
+      transition: all 0.3s; }
+  .iCard .card p {
+    font-size: 13px; }
+  .iCard .card h5 {
+    color: #bb0000; }
+  .iCard .card span {
+    color: #bb0000;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold; }
+  .iCard .card .iBtn {
+    padding: 8px 0px;
+    text-align: center;
+    background: #bb0000;
+    color: #fff;
+    font-size: 14px;
+    width: 100%; }
+  .iCard .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.1); }
+    .iCard .card:hover img {
+      transform: scale(1.1); }
+
+.pag ul {
+  padding: 0; }
+  .pag ul li {
+    display: inline-block;
+    transition: all 0.3s; }
+    .pag ul li a {
+      font-size: 15px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      line-height: 35px;
+      font-weight: 600; }
+      .pag ul li a i {
+        color: #bb0000;
+        font-weight: 900; }
+    .pag ul li:hover {
+      background: #e6eef2; }
+  .pag ul .disabled i {
+    color: #8080807a; }
+  .pag ul .disabled:hover {
+    background: initial; }
+    .pag ul .disabled:hover a {
+      pointer-events: none; }
+.pag .selected {
+  border: 2px solid #bb0000; }
+  .pag .selected:hover {
+    background: initial; }
+
+.healthCard {
   position: relative;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
   transition: all 0.5s;
   overflow: hidden; }
-  .iCard img {
+  .healthCard img {
     max-width: 100%; }
-  .iCard .cardBg {
+  .healthCard .cardBg {
     transition: all 0.5s; }
-    .iCard .cardBg::before {
+    .healthCard .cardBg::before {
       transition: all 0.5s;
       content: "";
       position: absolute;
@@ -66,18 +126,18 @@ section {
       height: 100%;
       background: #0000008f;
       left: 0; }
-  .iCard h3, .iCard h2 {
+  .healthCard h3, .healthCard h2 {
     font-weight: 700;
     position: absolute;
     top: 45%;
     display: inline-block;
     width: 100%;
     left: 0; }
-    .iCard h3 a, .iCard h2 a {
+    .healthCard h3 a, .healthCard h2 a {
       color: #fff; }
-  .iCard:hover .cardBg {
+  .healthCard:hover .cardBg {
     transform: scale(1.2); }
-    .iCard:hover .cardBg::before {
+    .healthCard:hover .cardBg::before {
       background: #00000033; }
 
 .iHead {
@@ -516,64 +576,6 @@ footer {
     border-radius: 5px; }
     #mainCategories .categories select:focus {
       outline: none; }
-#mainCategories .card {
-  transition: all 0.3s;
-  width: initial;
-  height: 100%; }
-  #mainCategories .card .photo {
-    height: 50%;
-    overflow: hidden; }
-    #mainCategories .card .photo img {
-      height: 100%;
-      transition: all 0.3s; }
-  #mainCategories .card p {
-    font-size: 13px; }
-  #mainCategories .card h5 {
-    color: #bb0000; }
-  #mainCategories .card span {
-    color: #bb0000;
-    padding-bottom: 10px;
-    font-size: 15px;
-    font-weight: bold; }
-  #mainCategories .card .iBtn {
-    padding: 8px 0px;
-    text-align: center;
-    background: #bb0000;
-    color: #fff;
-    font-size: 14px;
-    width: 100%; }
-  #mainCategories .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.1); }
-    #mainCategories .card:hover img {
-      transform: scale(1.1); }
-#mainCategories .pag ul {
-  padding: 0; }
-  #mainCategories .pag ul li {
-    display: inline-block;
-    transition: all 0.3s; }
-    #mainCategories .pag ul li a {
-      font-size: 15px;
-      width: 35px;
-      height: 35px;
-      display: inline-block;
-      line-height: 35px;
-      font-weight: 600; }
-      #mainCategories .pag ul li a i {
-        color: #bb0000;
-        font-weight: 900; }
-    #mainCategories .pag ul li:hover {
-      background: #e6eef2; }
-  #mainCategories .pag ul .disabled i {
-    color: #8080807a; }
-  #mainCategories .pag ul .disabled:hover {
-    background: initial; }
-    #mainCategories .pag ul .disabled:hover a {
-      pointer-events: none; }
-#mainCategories .pag .selected {
-  border: 2px solid #bb0000; }
-  #mainCategories .pag .selected:hover {
-    background: initial; }
 
 .shopIndex {
   background-image: url(../img/ftnss2.jpg) !important; }
@@ -607,5 +609,79 @@ footer {
     border-radius: 5px; }
     #mainSearch .categories select:focus {
       outline: none; }
+#mainSearch .col-lg-9 .card {
+  height: 100%; }
+
+#loader {
+  background-color: #d7d7d7;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #loader .pulse {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100; }
+  #loader .pulse:after {
+    content: '';
+    display: block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200px 100px" enable-background="new 0 0 200px 100px" xml:space="preserve"><polyline fill="none" stroke-width="3px" stroke="darkred" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>') 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-animation: 2s pulse linear infinite;
+    -moz-animation: 2s pulse linear infinite;
+    -o-animation: 2s pulse linear infinite;
+    animation: 2s pulse linear infinite;
+    clip: rect(0, 0, 100px, 0); }
+@-webkit-keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+    opacity: 0.4; }
+  4% {
+    clip: rect(0, 66.66667px, 100px, 0);
+    opacity: 0.6; }
+  15% {
+    clip: rect(0, 133.33333px, 100px, 0);
+    opacity: 0.8; }
+  20% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 1; }
+  80% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0; }
+  90% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0; }
+  100% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0; } }
+@keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0); }
+  4% {
+    clip: rect(0, 66.66667px, 100px, 0); }
+  15% {
+    clip: rect(0, 133.33333px, 100px, 0); }
+  20% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 1; }
+  80% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */

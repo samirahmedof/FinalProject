@@ -29,8 +29,94 @@
     }
 }
 
-
 .iCard {
+    .card {
+        transition: all 0.3s;
+        width: initial;
+        height: 100%;
+        .photo {
+            height: 50%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                transition: all 0.3s;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+        h5 {
+            color: $main;
+        }
+        span {
+            color: $main;
+            padding-bottom: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .iBtn {
+            padding: 8px 0px;
+            text-align: center;
+            background: $main;
+            color: $white;
+            font-size: 14px;
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.1);
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.pag {
+    ul {
+        padding: 0;
+        li {
+            display: inline-block;
+            // border-radius: 100%;
+            transition: all 0.3s;
+            a {
+                font-size: 15px;
+                width: 35px;
+                height: 35px;
+                display: inline-block;
+                line-height: 35px;
+                font-weight: 600;
+
+                i {
+                    color: $main;
+                    font-weight: 900;
+                }
+                
+            }
+            &:hover {
+                background: $bg2;
+            }
+        }
+        .disabled {
+            i {
+                color: #8080807a;
+            }
+            &:hover {
+                background: initial;
+                a {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    .selected {
+        border: 2px solid $main;
+        &:hover {
+            background: initial;
+        }
+    }
+}
+.healthCard {
     position: relative;
     background-color: #fff;
     text-align: center;

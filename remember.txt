@@ -1,0 +1,7 @@
+img teqlerine alt'lar elave etmek
+a teqlerinin hamisini yoxlamaq
+nav hoveri duzeltmek
+headeri duzeltmek
+sehife basliq bglari deyishmek
+axtarisha plugin qoshmaq
+bashliq iconu
