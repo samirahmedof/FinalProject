@@ -7,19 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>İdman</title>
     <link rel="icon" type="image/png" href="">
+
+    <!-- icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- plugin -->
     <link rel="stylesheet" href="scss/foxholder.min.css">
+
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Srisakdi:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <!-- main -->
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
 
 
 <body>
+    <!-- <div id="loader">
+        <div class="pulse"></div>
+    </div> -->
     <header class="blockHeader">
         <div class="container-fluid registration d-none">
             <div class="row sign-in justify-content-center iRegistration d-none">
@@ -128,7 +141,7 @@
                                         <a href="shop.html">İdman qidaları</a>
                                     </li>
                                     <li style="border:none">
-                                        <a href="shop.html">İdman alətləri</a>
+                                        <a href="">İdman alətləri</a>
                                     </li>
                                 </ul>
                             </div>
@@ -141,51 +154,98 @@
             </div>
 
         </div>
+
     </header>
     <main>
-        <section id="contact">
+        <section id="headBg" class="healthIndex">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="type pt-5 text-center">
+                        <span></span>
+                        <div id="typed-strings">
+                            <p>Dama dama</p>
+                            <p>göl olar</p>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainPrograms">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-2 text-center iHead">
-                        <h2>Əlaqə</h2>
+                    <div class="col-lg-4 text-center iHead">
+                        <h2>Məşq proqramları</h2>
                         <span></span>
                         <span class="sec"></span>
                     </div>
                 </div>
-                <div class="row justify-content-between">
-                    <div class="col-lg-5 exm">
-                        <form class="iForm">
-                            <input id="name" type="text" placeholder="Ad, Soyad">
-                            <input id="mail" type="email" placeholder="E-poçt">
-                            <textarea id="text" placeholder="Məzmun"></textarea>
-                            <div class="sbm text-right">
-                                <button type="submit" class="iBtn">Göndər</button>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row iCard">
+                            <div class="col-lg-3">
+                                <a href="programBlog.html">
+                                    <div class="card">
+                                        <div class="photo">
+                                            <img src="img/programs/1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-5 cntct exm">
-                        <div>
-                            <div class="cn phone">
-                                <i class="fas fa-phone"></i>
-                                <a href="#">0555555555</a>
+                            <div class="col-lg-3">
+                                <a href="programBlog.html">
+                                    <div class="card">
+                                        <div class="photo">
+                                            <img src="img/programs/2.jpeg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Voluptatibus distinctio saepe ut accusantium autem cumque</h5>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="cn mail">
-                                <i class="fas fa-envelope"></i>
-                                <a href="#">info@idman.az</a>
+                            <div class="col-lg-3">
+                                <a href="programBlog.html">
+                                    <div class="card">
+                                        <div class="photo">
+                                            <img src="img/programs/3.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Blanditiis dolor dolorum</h5>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="cn facebook">
-                                <i class="fab fa-facebook-f"></i>
-                                <a href="#">www.facebook.com/idman.az</a>
+                            <div class="col-lg-3">
+                                <a href="programBlog.html">
+                                    <div class="card">
+                                        <div class="photo">
+                                            <img src="img/programs/2.jpeg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laudantium quas iure quos cum exercitationem</h5>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="cn instagram">
-                                <i class="fab fa-instagram"></i>
-                                <a href="#">@idman.az</a>
-                            </div>
-                            <div class="cn whatsapp">
-                                <i class="fab fa-whatsapp"></i>
-                                <a href="#">0777777777</a>
-                            </div>
+
                         </div>
+                    </div>
+                </div>
+                <div class="row pag mt-5">
+                    <div class="col-lg-12 text-center">
+                        <ul>
+                            <li class="prev disabled"><a href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a>
+                            </li>
+                            <li><a href="">1</a></li>
+                            <li class="selected"><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li class="next"><a href=""><i class="fas fa-angle-right"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -232,8 +292,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/universal-tilt.js"></script>
     <script src="js/foxholder.js"></script>
-    <script src="js/pluginContact.js"></script>
+    <script src="js/plugin.js"></script>
     <script src="js/script.js"></script>
 
 </body>

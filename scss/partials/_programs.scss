@@ -1,0 +1,53 @@
+#mainPrograms {
+    .col-lg-3 {
+        a {
+            height: 100%;
+            .photo{
+                height: initial;
+            }
+            h5 {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+#blog {
+    .col-lg-3 {
+        border-right: 2px solid $main;
+        h4 {
+            font-weight: bold;
+            color: $main;
+            border-bottom: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+            li {
+                padding: 10px;
+                border-bottom: 1px solid #80808059;
+                transition: all 0.3s;
+                font-weight: 400;
+                &:hover {
+                    background: #e6eef2;
+                    a {
+                        color: $main;
+                    }
+                }
+            }
+        }
+    }
+    .col-lg-9 {
+        img {
+            max-width: 100%;
+        }
+        h1 {
+            margin: 25px 0px;
+            color: $main;
+            font-weight: bold;
+        }
+        
+    }
+}
