@@ -18,5 +18,8 @@ $(document).ready(function () {
         $('.iSearch').foxholder({
                 placeholderDemo: 2
         });
+        $('.iCalc').foxholder({
+                placeholderDemo: 7
+        });
 
 })

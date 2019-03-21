@@ -157,72 +157,111 @@
 
     </header>
     <main>
-        <section id="headBg" class="healthIndex">
+        <section id="headBg" class="searchIndex">
             <div class="container">
                 <div class="col-lg-12">
                     <div class="type pt-5 text-center">
                         <span></span>
                         <div id="typed-strings">
-                            <p>Dama dama</p>
-                            <p>göl olar</p>
+                            <p>Anadır arzulara hər zaman Qarabağ</p>
+                            <p>danışan dil dodağım tar kaman Qarabağ</p>
                         </div>
                         <span id="typed"></span>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="mainHealth">
+        <section id="mainCalc">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 text-center iHead">
-                        <h2>Sağlamlıq</h2>
+                        <h2>Hesablamalar</h2>
                         <span></span>
                         <span class="sec"></span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-3 mb-5">
-                                <div class="healthCard iTilt">
-                                    <div class="cardHead">
-                                        <a href="programs.html" class="cardBg">
-                                            <img src="img/health/programs2.jpg">
-                                        </a>
-                                        <h2><a href="programs.html">Məşq proqramları</a></h2>
-                                    </div>
-                                </div>
+                <div class="row calculating">
+                    <div class="col-lg-6">
+                        <form class="iCalc">
+                            <input id="weight" type="text" placeholder="Çəki">
+                            <input id="height" type="text" placeholder="Boy">
+                            <input id="old" type="text" placeholder="Yaş">
+
+
+                            <div class="categories iCat mt-3">
+                                <select id="selecting" class="activity">
+                                    <option selected class="d-none">Aktivlik dərəcəsi</option>
+                                    <option value="1">Hərəkətsiz</option>
+                                    <option value="2">Az aktiv</option>
+                                    <option value="3">Orta dərəcədə aktiv</option>
+                                    <option value="4">Çox aktiv</option>
+                                    <option value="5">Ekstra aktiv</option>
+                                </select>
                             </div>
-                            <div class="col-lg-3 mb-5">
-                                <div class="healthCard iTilt">
-                                    <div class="cardHead">
-                                        <a href="calculation.html" class="cardBg">
-                                            <img src="img/health/calculate.jpg">
-                                        </a>
-                                        <h2><a href="calculation.html">Hesablamalar</a></h2>
-                                    </div>
-                                </div>
+                            <span class="radioSpan">Cinsiyyət: </span>
+                            <div class="form-check form-check-inline gender">
+                                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="1">
+                                <label class="form-check-label" for="genderMale">
+                                    Kişi
+                                </label>
                             </div>
-                            <div class="col-lg-3 mb-5">
-                                <div class="healthCard iTilt">
-                                    <div class="cardHead">
-                                        <a href="nutrition.html" class="cardBg">
-                                            <img src="img/health/food.jpg">
-                                        </a>
-                                        <h2><a href="nutrition.html">Qidalar</a></h2>
-                                    </div>
-                                </div>
+                            <div class="form-check form-check-inline gender">
+                                <input class="form-check-input" type="radio" name="gender" id="genderFamale" value="2">
+                                <label class="form-check-label" for="genderFamale">
+                                    Qadın
+                                </label>
                             </div>
-                            <div class="col-lg-3 mb-5">
-                                <div class="healthCard iTilt">
-                                    <div class="cardHead">
-                                        <a href="motivation.html" class="cardBg">
-                                            <img src="img/health/motivation.jpg">
-                                        </a>
-                                        <h2><a href="motivation.html">Motivasiya</a></h2>
-                                    </div>
-                                </div>
+
+
+                            <span class="radioSpan">İdmanla məşğul olursunuz mu? </span>
+                            <div class="form-check form-check-inline sport">
+                                <input class="form-check-input" type="radio" name="sport" id="sportYes" value="1">
+                                <label class="form-check-label" for="sportYes">
+                                    Hə
+                                </label>
                             </div>
+                            <div class="form-check form-check-inline sport">
+                                <input class="form-check-input" type="radio" name="sport" id="sportNo" value="2">
+                                <label class="form-check-label" for="sportNo">
+                                    Yox
+                                </label>
+                            </div>
+
+                            <span class="radioSpan">Protein qidaları qəbul edirsiniz mi? </span>
+                            <div class="form-check form-check-inline supp">
+                                <input class="form-check-input" type="radio" name="supp" id="suppYes" value="1">
+                                <label class="form-check-label" for="suppYes">
+                                    Hə
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline supp">
+                                <input class="form-check-input" type="radio" name="supp" id="suppNo" value="2">
+                                <label class="form-check-label" for="suppNo">
+                                    Yox
+                                </label>
+                            </div>
+
+                            <div class="sbm text-center mt-3">
+                                <button type="submit" class="iBtn">Hesabla</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 info">
+                        <div class="calori d-flex justify-content-between">
+                            <span>Günlük tələb olunan kalori: </span>
+                            <span class="calc"></span>
+                        </div>
+                        <div class="meta d-flex justify-content-between">
+                            <span>Metabolizma dərəcəsi:</span>
+                            <span class="calc"></span>
+                        </div>
+                        <div class="water d-flex justify-content-between">
+                            <span>Gündəlik içilməsi gərəkən su:</span>
+                            <span class="calc"></span>
+                        </div>
+                        <div class="weight d-flex justify-content-between">
+                            <span>İdeal çəkiniz:</span>
+                            <span class="calc"></span>
                         </div>
                     </div>
                 </div>

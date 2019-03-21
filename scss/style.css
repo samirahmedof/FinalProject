@@ -639,6 +639,32 @@ footer {
   #mainMotivation table a:hover {
     color: #bb0000; }
 
+#mainCalc form .radioSpan {
+  display: block;
+  margin-top: 20px;
+  color: #bb0000;
+  font-weight: bold; }
+#mainCalc input {
+  border-color: #bb0000;
+  border-radius: 5px;
+  max-width: 70%; }
+#mainCalc .foxholder-form__icon--effect-7 {
+  border-left-color: #bb0000; }
+#mainCalc select {
+  padding: 10px;
+  border-color: #bb0000;
+  border-radius: 5px; }
+#mainCalc .info {
+  border-left: 2px solid #bb0000; }
+  #mainCalc .info span {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic; }
+  #mainCalc .info .calc {
+    color: #bb0000;
+    font-weight: bold;
+    font-style: initial; }
+
 #mainSearch .searching {
   border-left: 2px solid #bb0000; }
 #mainSearch .foxholder-form__label {

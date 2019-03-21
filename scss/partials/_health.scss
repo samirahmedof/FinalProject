@@ -93,3 +93,43 @@
         }
     }
 }
+
+// hesablamalar
+
+#mainCalc {
+    form {
+        .radioSpan {
+            display: block;
+            margin-top: 20px;
+            color: $main;
+            font-weight: bold;
+        }
+    }
+    input {
+        border-color: $main;
+        border-radius: 5px;
+        max-width: 70%;
+    }
+    .foxholder-form__icon--effect-7 {
+        border-left-color: $main;
+    }
+    select {
+        padding: 10px;
+        border-color: #bb0000;
+        border-radius: 5px;
+    }
+    .info {
+        border-left: 2px solid $main;
+        span {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .calc {
+            color: $main;
+            font-weight: bold;
+            font-style: initial;
+
+        }
+    }
+}
