@@ -593,6 +593,52 @@ footer {
 .bodyBg {
   background: #0000008f; }
 
+#mainPrograms .col-lg-3 a {
+  height: 100%; }
+  #mainPrograms .col-lg-3 a .photo {
+    height: initial; }
+  #mainPrograms .col-lg-3 a h5 {
+    font-size: 18px;
+    margin: 0; }
+
+#blog .col-lg-3 {
+  border-right: 2px solid #bb0000; }
+  #blog .col-lg-3 h4 {
+    font-weight: bold;
+    color: #bb0000;
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center; }
+  #blog .col-lg-3 ul {
+    padding: 0; }
+    #blog .col-lg-3 ul li {
+      padding: 10px;
+      border-bottom: 1px solid #80808059;
+      transition: all 0.3s;
+      font-weight: 400; }
+      #blog .col-lg-3 ul li:hover {
+        background: #e6eef2; }
+        #blog .col-lg-3 ul li:hover a {
+          color: #bb0000; }
+#blog .col-lg-9 img {
+  max-width: 100%; }
+#blog .col-lg-9 h1 {
+  margin: 25px 0px;
+  color: #bb0000;
+  font-weight: bold; }
+
+#mainMotivation table td {
+  vertical-align: middle; }
+#mainMotivation table a {
+  transition: all 0.3s;
+  font-weight: bold; }
+  #mainMotivation table a i {
+    color: #bb0000;
+    font-size: 20px;
+    margin-left: 5px; }
+  #mainMotivation table a:hover {
+    color: #bb0000; }
+
 #mainSearch .searching {
   border-left: 2px solid #bb0000; }
 #mainSearch .foxholder-form__label {
@@ -683,38 +729,5 @@ footer {
   100% {
     clip: rect(0, 300px, 100px, 0);
     opacity: 0; } }
-#mainPrograms .col-lg-3 a {
-  height: 100%; }
-  #mainPrograms .col-lg-3 a .photo {
-    height: initial; }
-  #mainPrograms .col-lg-3 a h5 {
-    font-size: 18px;
-    margin: 0; }
-
-#blog .col-lg-3 {
-  border-right: 2px solid #bb0000; }
-  #blog .col-lg-3 h4 {
-    font-weight: bold;
-    color: #bb0000;
-    border-bottom: 1px solid;
-    padding: 10px;
-    text-align: center; }
-  #blog .col-lg-3 ul {
-    padding: 0; }
-    #blog .col-lg-3 ul li {
-      padding: 10px;
-      border-bottom: 1px solid #80808059;
-      transition: all 0.3s;
-      font-weight: 400; }
-      #blog .col-lg-3 ul li:hover {
-        background: #e6eef2; }
-        #blog .col-lg-3 ul li:hover a {
-          color: #bb0000; }
-#blog .col-lg-9 img {
-  max-width: 100%; }
-#blog .col-lg-9 h1 {
-  margin: 25px 0px;
-  color: #bb0000;
-  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
