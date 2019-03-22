@@ -27,7 +27,7 @@ header {
                         color: $main;
                     }
                 }
-                button.iBtn {
+                a.iBtn {
                     background: $main;
                     color: $white!important;
                     &::before {
@@ -161,6 +161,39 @@ header {
                         display: none;
                     }
                 }
+                .userDown {
+                    position: absolute;
+                    background: white;
+                    padding: 25px;
+                    right: 0;
+                    width: 250px;
+                    strong {
+                        width: 100%;
+                        display: inline-block;
+                        font-size: 18px;
+                    }
+                    .promo {
+                        font-size: 13px;
+                        margin: 10px 0px;
+                    }
+                    span.code {
+                        font-style: italic;
+                        color: $main;
+                        font-weight: bold;
+                    }
+                    .iBtn {
+                        font-size: 14px;
+                        width: 100%;
+                        text-align: center;
+                        margin: 5px 0px;
+                    }
+                    a.code {
+                        background: $main;
+                        color: white!important;
+                    }
+                }
+
+
 
                 &::before {
                     content: "";
@@ -191,10 +224,11 @@ header {
                     }
                 }
             }
+            
         }
         .sign {
 
-            .iBtn {
+            .iBtn{
                 cursor: pointer;
                 font-size: 16px;
                 padding: 5px 5px;
@@ -211,6 +245,22 @@ header {
             &::before , &::after {
                 content: none;
             }
+        }
+        .profile {
+            &::before , &::after {
+                content: none;
+            }
+        }
+        .fa-user {
+            color: #bb0000;
+            width: 35px;
+            height: 35px;
+            font-size: 22px;
+            border: 1px solid #bb0000;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 35px;
+            vertical-align: middle;
         }
     }
     

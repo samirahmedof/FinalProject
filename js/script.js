@@ -42,6 +42,33 @@ $(document).ready(function () {
 
                 $(".registration").addClass("d-none");
         })
+        $("header .iSigning a.iBtn").click(function(){
+                if (!($(".iSigning").hasClass("d-none"))) {
+                        $(".iSigning").addClass("d-none");
+                }
+                $(".registration").addClass("d-none");
+                
+                $("header .container li.sign").addClass("d-none");
+                $("header .container li.profile").removeClass("d-none");
+        })
+
+
+        //user profile
+        $(document).click(function (e) {
+                if (!$(e.target).closest("header .userDrop .fas").length && (!($("header .userDrop .userDown").hasClass("d-none")))) {
+                    $("header .userDrop .userDown").addClass("d-none");
+                }
+            });
+        $("header .userDrop .fas").click(function(){
+                if($("header .userDrop .userDown").hasClass("d-none")) {
+                        $("header .userDrop .userDown").removeClass("d-none");
+                }
+                else {
+                        $("header .userDrop .userDown").addClass("d-none");
+                }
+        })
+
+
 
         $(".iSelect select").click(function () {
                 if ($(this).val() == 1) {

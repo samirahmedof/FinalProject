@@ -204,10 +204,10 @@ header {
           transition: all 0.3s; }
           header .registration .sign-in .sign i:hover {
             color: #bb0000; }
-        header .registration .sign-in .sign button.iBtn {
+        header .registration .sign-in .sign a.iBtn {
           background: #bb0000;
           color: #fff !important; }
-          header .registration .sign-in .sign button.iBtn::before {
+          header .registration .sign-in .sign a.iBtn::before {
             content: ""; }
         header .registration .sign-in .sign p {
           margin-top: 1rem;
@@ -301,6 +301,31 @@ header {
         display: inline-block;
         width: 100%;
         display: none; }
+    header .col-lg-8 ul li .userDown {
+      position: absolute;
+      background: white;
+      padding: 25px;
+      right: 0;
+      width: 250px; }
+      header .col-lg-8 ul li .userDown strong {
+        width: 100%;
+        display: inline-block;
+        font-size: 18px; }
+      header .col-lg-8 ul li .userDown .promo {
+        font-size: 13px;
+        margin: 10px 0px; }
+      header .col-lg-8 ul li .userDown span.code {
+        font-style: italic;
+        color: #bb0000;
+        font-weight: bold; }
+      header .col-lg-8 ul li .userDown .iBtn {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0px; }
+      header .col-lg-8 ul li .userDown a.code {
+        background: #bb0000;
+        color: white !important; }
     header .col-lg-8 ul li::before {
       content: "";
       position: absolute;
@@ -334,6 +359,18 @@ header {
       color: #fff; }
   header .col-lg-8 .sign::before, header .col-lg-8 .sign::after {
     content: none; }
+  header .col-lg-8 .profile::before, header .col-lg-8 .profile::after {
+    content: none; }
+  header .col-lg-8 .fa-user {
+    color: #bb0000;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    border: 1px solid #bb0000;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle; }
 
 footer {
   border-top: 1px solid #80808059;
