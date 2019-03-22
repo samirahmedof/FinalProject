@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>İdman</title>
+    <link rel="icon" type="image/png" href="">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="scss/foxholder.min.css">
+    <link rel="stylesheet" href="scss/magnific-popup.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <!-- main -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+
+
+<body>
+    <!-- <div id="loader">
+        <div class="pulse"></div>
+    </div> -->
+    <header class="blockHeader">
+        <div class="container-fluid registration d-none">
+            <div class="row sign-in justify-content-center iRegistration d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign">
+                        <form class="iReg">
+                            <input id="name" type="text" placeholder="Ad">
+                            <input id="surname" type="text" placeholder="Soyad">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <input id="pass" type="password" placeholder="Şifrə">
+                            <input id="pass2" type="password" placeholder="Şifrə">
+                            <div class="sbm text-center">
+                                <button type="submit" class="iBtn">Qeydiyyat</button>
+                            </div>
+                        </form>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row sign-in justify-content-center iSigning d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign text-center">
+                        <form class="iReg">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <input id="pass" type="password" placeholder="Şifrə">
+                            <div class="sbm text-center">
+                                <button type="submit" class="iBtn">Daxil ol</button>
+                            </div>
+                        </form>
+                        <p>və ya</p>
+                        <span class="iBtn">Qeydiyyatdan keç</span>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row sign-in justify-content-center iPromo d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign text-center">
+                        <strong style="color: green">*Promokod əldə etmək üçün şəxsi kabinetə daxil olun</strong>
+                        <form class="iReg">
+                            <input id="name" type="text" placeholder="Ad">
+                            <input id="surname" type="text" placeholder="Soyad">
+                            <input id="promo" type="text" placeholder="Promokod">
+                            <strong>Şəxsiyyət vəsiqənizi özünüzlə gətirməyi unutmayın</strong>
+
+                            <div class="sbm text-center">
+                                <button type="submit" class="iBtn">Təsdiq et</button>
+                            </div>
+                        </form>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between pt-2">
+                <div class="col-lg-2">
+                    <h1><a href="index.html">idman.az</a></h1>
+                </div>
+                <div class="col-lg-8 text-right d-flex align-items-center">
+                    <ul>
+                        <li><a href="index.html">Ana səhifə</a></li>
+
+                        <!-- kateqoriyalar -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="categories.html">Kateqoriyalar</a>
+                            <div class="iDown text-left">
+                                <ul>
+                                    <li>
+                                        <a href="categories.html">Fitness zalları</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Futbol meydançaları</a>
+                                    </li>
+                                    <li class="iSubDrop">
+                                        <a href="categories.html">Təkbətək idman növləri</a>
+                                        <div class="iSub">
+                                            <ul>
+                                                <li><a href="categories.html">Boks</a></li>
+                                                <li><a href="categories.html">Kikboks</a></li>
+                                                <li><a href="categories.html">Güləş</a></li>
+                                                <li><a href="categories.html">Cudo</a></li>
+                                                <li><a href="categories.html">Karate</a></li>
+                                                <li><a href="categories.html">Taekvondo</a></li>
+                                                <li style="border: none"><a href="#">Qaydasız döyüş</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="categories.html">Hovuzlar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- saglamliq -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="health.html">Sağlamlıq</a>
+                            <div class="iDown text-left" style="width: 250%">
+                                <ul>
+                                    <li>
+                                        <a href="health.html">Məşq proqramları</a>
+                                    </li>
+                                    <li>
+                                        <a href="health.html">Sağlamlıq hesablamaları</a>
+                                    </li>
+                                    <li>
+                                        <a href="health.html">Qidalar</a>
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="motivation.html">Motivasiya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- magazalar -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="shop.html">Mağazalar</a>
+                            <div class="iDown text-left" style="width: 180%">
+                                <ul>
+                                    <li>
+                                        <a href="shop.html">İdman geyimləri</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html">İdman qidaları</a>
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="#">İdman alətləri</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                        <li class="sign"><a class="iBtn enter">Daxil ol</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section id="moreGallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <a class="iPopup" href="img/gym/1.jpg">
+                            <img src="img/gym/1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row" style="height: 100%">
+                            <div class="col-lg-12">
+                                <a class="iPopup" href="img/gym/2.jpg">
+                                    <img src="img/gym/2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="iPopup" href="img/gym/3.jpg">
+                                    <img src="img/gym/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="iPopup" href="img/gym/4.jpg">
+                                    <img src="img/gym/4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="others d-none">
+                            <a class="iPopup" href="img/gym/5.jpg"></a>
+                            <a class="iPopup" href="img/gym/6.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="moreInfo">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 text-center iHead">
+                        <h2>Asdsfsf fitness zalı</h2>
+                        <span></span>
+                        <span class="sec"></span>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <span class="about">Məlumat</span>
+                        <div class="info">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatum, ducimus
+                                incidunt omnis consequuntur porro ab exercitationem labore ipsa neque laudantium dolore
+                                sint quidem, ea provident voluptas, recusandae ullam libero. Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Voluptate excepturi, iure vitae ipsam quos, perspiciatis
+                                numquam cupiditate consectetur doloribus eligendi, laudantium odit odio repudiandae?
+                                Soluta ab neque ex vitae repellendus?</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas numquam quisquam
+                                consectetur? Porro a voluptates saepe blanditiis illo perferendis, qui sequi
+                                accusantium. Recusandae eos dolorem culpa adipisci perferendis ullam rem!</p>
+                        </div>
+                        <div class="sale mt-5">
+                            <strong>Promokod vasitəsilə <span>10%</span> endirim əldə et</strong>
+                            <a href="#" class="iBtn mt-3" style="padding: 12px 15px">Endirim əldə et</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 cntct">
+                        <span class="about">Yer və əlaqə</span>
+                        <div class="social">
+                            <div class="cn phone">
+                                <i class="fas fa-phone"></i>
+                                <p>0519876543</p>
+                            </div>
+                            <div class="cn mail">
+                                <i class="fas fa-envelope"></i>
+                                <p>asdsfsf@gmail.com</p>
+                            </div>
+                            <div class="cn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <p>www.facebook.com/asdsfsf</p>
+                            </div>
+                            <div class="cn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <p>@asdsfsf</p>
+                            </div>
+                            <div class="cn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <p>0709124124</p>
+                            </div>
+                            <div class="cn web">
+                                <i class="fas fa-globe"></i>
+                                <p>asdsfsf.az</p>
+                            </div>
+                            <div class="adress cn">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Bakı , Nəsimi r. , A.Sdfgh küç 31</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.897895974554!2d48.14839944995576!3d40.34461096794759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403962d2ea312b03%3A0x52e4fe06522411b4!2zS8O8cmTJmW1pciDEsGNyYSBIYWtpbWl5ecmZdGk!5e0!3m2!1sen!2s!4v1553247416689"
+                                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4><a href="#">idman.az</a></h4>
+                        <p>Сopyright © 2019 idman.az</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="socials text-right">
+                            <ul>
+                                <li>
+                                    <a href="#" class="fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="wp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gm">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ig">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/universal-tilt.js"></script>
+    <script src="js/foxholder.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/pluginContact.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

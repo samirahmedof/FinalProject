@@ -101,3 +101,30 @@
         }
     }
 }
+.cntct {
+    .cn {
+        margin-bottom: 20px;
+        i {
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            font-size: 25px;
+            color: $main;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        p {
+            font-size: 15px;
+            display: inline-block;
+            margin: 0;
+        }
+        a,p {
+            font-style: italic;
+            transition: all 0.3s;
+            &:hover {
+                color: $main
+            }
+        }
+    }
+    
+}

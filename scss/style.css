@@ -550,6 +550,26 @@ footer {
     #contact .iBtn:hover::before {
       background: #fff; }
 
+.cntct .cn {
+  margin-bottom: 20px; }
+  .cntct .cn i {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: #bb0000;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .cntct .cn p {
+    font-size: 15px;
+    display: inline-block;
+    margin: 0; }
+  .cntct .cn a, .cntct .cn p {
+    font-style: italic;
+    transition: all 0.3s; }
+    .cntct .cn a:hover, .cntct .cn p:hover {
+      color: #bb0000; }
+
 #headBg {
   padding: 0;
   height: 40vh;
@@ -755,5 +775,34 @@ footer {
   100% {
     clip: rect(0, 300px, 100px, 0);
     opacity: 0; } }
+#moreGallery img {
+  max-width: 100%; }
+
+#moreInfo .sale strong {
+  font-size: 20px;
+  font-style: italic; }
+#moreInfo .sale span {
+  font-size: 25px;
+  color: #bb0000;
+  vertical-align: middle; }
+#moreInfo span.about {
+  color: #bb0000;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+#moreInfo iframe {
+  max-width: 100%; }
+
+.blockHeader .iPromo strong {
+  font-size: 13px;
+  text-align: left;
+  display: block;
+  color: #bb0000;
+  margin-bottom: 10px;
+  font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
