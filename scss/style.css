@@ -178,6 +178,14 @@ section {
   max-height: 170px !important;
   max-width: initial !important; }
 
+#headBg .container {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+#contact, #moreGallery, #blog {
+  padding-top: 120px; }
+
 header {
   position: fixed;
   right: 0;
@@ -307,6 +315,10 @@ header {
       padding: 25px;
       right: 0;
       width: 250px; }
+      header .col-lg-8 ul li .userDown .exit {
+        color: #bb0000 !important; }
+        header .col-lg-8 ul li .userDown .exit:hover {
+          color: #fff !important; }
       header .col-lg-8 ul li .userDown strong {
         width: 100%;
         display: inline-block;
@@ -523,28 +535,6 @@ footer {
 #shops {
   background: #e6eef2; }
 
-.blockHeader {
-  background: #fff;
-  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-  color: #333;
-  position: relative; }
-  .blockHeader a {
-    color: #333 !important; }
-  .blockHeader h1 a {
-    color: #bb0000 !important; }
-  .blockHeader li::before, .blockHeader li::after {
-    background: #bb0000 !important; }
-  .blockHeader .iDown li a:hover {
-    transform: translate(5px);
-    color: #bb0000 !important; }
-  .blockHeader .iBtn {
-    color: #bb0000 !important; }
-    .blockHeader .iBtn:hover {
-      background: #bb0000 !important;
-      color: #fff !important; }
-      .blockHeader .iBtn:hover::before {
-        content: none; }
-
 .scrolled {
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -609,7 +599,7 @@ footer {
 
 #headBg {
   padding: 0;
-  height: 40vh;
+  height: 60vh;
   position: relative;
   background-image: url(../img/ftnss3.jpg);
   background-attachment: fixed;

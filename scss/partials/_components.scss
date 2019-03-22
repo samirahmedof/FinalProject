@@ -220,3 +220,15 @@
     max-height: 170px!important;
     max-width: initial!important;
 }
+
+#headBg {
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#contact , #moreGallery, #blog {
+    padding-top: 120px; 
+}

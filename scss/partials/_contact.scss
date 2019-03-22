@@ -1,47 +1,4 @@
-.blockHeader {
-    background: $white;
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-    color: $black;
-    position: relative;
-    a {
-        color: $black!important;
-    }
-    h1 {
-        a {
-            color: $main!important;
-        }
-    }
-    li {
-        &::before , &::after {
-            background: $main!important;
-        }
-    }
-    .iDown {
-        li {
-            a {
-                &:hover {
-                    transform: translate(5px);
-                    color: $main!important;
-                }
-                
-            }
-                
-        }
-    }
-    .iBtn {
-        color: $main!important;
-        &:hover {
-            background: $main!important;
-            color: $white!important;
 
-            &::before {
-                content: none;
-            }
-            // color: $main!important;
-        }
-    }
-    
-}
 .scrolled {
     transition: all 0.5s ease-in-out;
     position: fixed;

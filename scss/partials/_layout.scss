@@ -34,6 +34,7 @@ header {
                         content: "";
                     }
                 }
+                
                 p {
                     margin-top: 1rem;
                     font-style: italic;
@@ -167,6 +168,13 @@ header {
                     padding: 25px;
                     right: 0;
                     width: 250px;
+                    .exit {
+                        &:hover {
+                            color: $white!important;
+                        }
+                        color: $main!important;
+
+                    }
                     strong {
                         width: 100%;
                         display: inline-block;

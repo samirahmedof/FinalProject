@@ -6,10 +6,10 @@ $(document).ready(function () {
 
         $(window).scroll(function (e) {
                 if ($(this).scrollTop() > 100) {
-                        $("header").addClass("scrolled");
+                        $(".headerMain").addClass("scrolled");
                 }
                 else {
-                        $("header").removeClass("scrolled");
+                        $(".headerMain").removeClass("scrolled");
                 }
         });
 
@@ -205,4 +205,7 @@ $(document).ready(function () {
 
                 })
         })
+
+        
+
 })
