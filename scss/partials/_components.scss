@@ -34,6 +34,7 @@
         transition: all 0.3s;
         width: initial;
         height: 100%;
+        overflow: hidden;
         .photo {
             height: 50%;
             overflow: hidden;
@@ -52,6 +53,19 @@
             color: $main;
             padding-bottom: 10px;
             font-size: 15px;
+            font-weight: bold;
+        }
+        span.sale {
+            background: $main;
+            color: $white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            transform: rotate(45deg);
+            font-size: 14px;
+            width: 100%;
+            right: -35%;
+            top: 5%;
             font-weight: bold;
         }
         .iBtn {

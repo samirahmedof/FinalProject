@@ -11,4 +11,8 @@ $(document).ready(function () {
     });
     //----------------------------------//
 
+    // $(window).on('beforeunload', function() { //sehife yenilenerken basha qayitmaq
+    //     $(window).scrollTop(0);
+    // });
+
 })

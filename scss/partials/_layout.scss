@@ -86,15 +86,19 @@ header {
                 display: inline-block;
                 margin-left: 20px;
                 position: relative;
+                transition: all 0.3s;
+
                 a {
                     color: $white;
                     padding: 5px 0px;
                 }
                 .iDown {
+                    transition: all 0.3s;
                     position: absolute;
-                    display: inline-block;
+                    visibility: hidden;
                     width: 180%;
                     left: 0;
+                    opacity: 0;
                     background: $white;
                     box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
                     ul {
@@ -145,13 +149,13 @@ header {
                         }
                             
                     }
-                    display: none;
                    
 
                 }
                 .iSubDrop {
                     position: relative;
                     .iSub {
+                        transition: all 0.3s;
                         position: absolute;
                         background: $white;
                         box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
@@ -159,7 +163,8 @@ header {
                         top: 0px;
                         display: inline-block;
                         width: 100%;
-                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
                     }
                 }
                 .userDown {
@@ -201,8 +206,6 @@ header {
                     }
                 }
 
-
-
                 &::before {
                     content: "";
                     position: absolute;
@@ -229,6 +232,26 @@ header {
                     }
                     &::after {
                         width: 100%;
+                    }
+                }
+            }
+            li.iDrop {
+                transition: all 0.3s;
+                &:hover {
+                transition: all 0.3s;
+                    .iDown {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+            li.iSubDrop {
+                transition: all 0.3s;
+                &:hover {
+                transition: all 0.3s;
+                    .iSub {
+                        visibility: visible;
+                        opacity: 1;
                     }
                 }
             }

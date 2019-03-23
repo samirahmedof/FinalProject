@@ -3,17 +3,7 @@ $(document).ready(function () {
         //-----------------Preloader-----------------//
         $(window).on('load', function () {
                 $('#loader').fadeOut('slow');
-        });
-        //----------------------------------//
-
-
-        //----------------Nav elementlerinin hover'i------------------//
-        $(".iDrop").hover(function () {
-                $(this).children(".iDown").fadeToggle(400);
-        });
-
-        $(".iSubDrop").hover(function () {
-                $(this).children(".iSub").fadeToggle(400);
+                $(window).scrollTop(0);
         });
         //----------------------------------//
 
