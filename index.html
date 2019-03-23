@@ -8,19 +8,17 @@
     <title>İdman</title>
     <link rel="icon" type="image/png" href="">
 
-    <!-- plugin -->
-    <link rel="stylesheet" href="scss/foxholder.min.css">
-
     <!-- icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
+    <!-- plugin -->
+    <link rel="stylesheet" href="scss/foxholder.min.css">
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Srisakdi:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 
     <!-- main -->
@@ -28,145 +26,146 @@
 </head>
 
 <body>
-    <!-- <div id="loader">
+    <div id="loader">
         <div class="pulse"></div>
-    </div> -->
+    </div>
     <header class="headerMain">
-            <div class="container-fluid registration d-none">
-                    <div class="row sign-in justify-content-center iRegistration d-none">
-                        <div class="col-lg-4 d-flex align-items-center">
-                            <div class="sign">
-                                <form class="iReg">
-                                    <input id="name" type="text" placeholder="Ad">
-                                    <input id="surname" type="text" placeholder="Soyad">
-                                    <input id="mail" type="email" placeholder="E-poçt">
-                                    <input id="pass" type="password" placeholder="Şifrə">
-                                    <input id="pass2" type="password" placeholder="Şifrə">
-                                    <div class="sbm text-center">
-                                        <button type="submit" class="iBtn">Qeydiyyat</button>
-                                    </div>
-                                </form>
-                                <i class="fas fa-times"></i>
+        <div class="container-fluid registration d-none">
+            <div class="row sign-in justify-content-center iRegistration d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign">
+                        <form class="iReg">
+                            <input id="name" type="text" placeholder="Ad">
+                            <input id="surname" type="text" placeholder="Soyad">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <input id="pass" type="password" placeholder="Şifrə">
+                            <input id="pass2" type="password" placeholder="Şifrə">
+                            <div class="sbm text-center">
+                                <button type="submit" class="iBtn">Qeydiyyat</button>
                             </div>
-                        </div>
+                        </form>
+                        <i class="fas fa-times"></i>
                     </div>
-                    <div class="row sign-in justify-content-center iSigning d-none">
-                        <div class="col-lg-4 d-flex align-items-center">
-                            <div class="sign text-center">
-                                <form class="iReg">
-                                    <input id="mail" type="email" placeholder="E-poçt">
-                                    <input id="pass" type="password" placeholder="Şifrə">
-                                    <div class="sbm text-center">
-                                        <a href="#" class="iBtn">Daxil ol</a>
-                                    </div>
-                                </form>
-                                <p>və ya</p>
-                                <span class="iBtn">Qeydiyyatdan keç</span>
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
-                    </div>
-        
                 </div>
-                <div class="container">
-                    <div class="row justify-content-between pt-2">
-                        <div class="col-lg-2">
-                            <h1><a href="index.html">idman.az</a></h1>
-                        </div>
-                        <div class="col-lg-8 text-right d-flex align-items-center">
-                            <ul>
-                                <li><a href="index.html">Ana səhifə</a></li>
-        
-                                <!-- kateqoriyalar -->
-                                <li class="iDrop" style="position: relative">
-                                    <a href="categories.html">Kateqoriyalar</a>
-                                    <div class="iDown text-left">
-                                        <ul>
-                                            <li>
-                                                <a href="categories.html">Fitness zalları</a>
-                                            </li>
-                                            <li>
-                                                <a href="categories.html">Futbol meydançaları</a>
-                                            </li>
-                                            <li class="iSubDrop">
-                                                <a href="categories.html">Təkbətək idman növləri</a>
-                                                <div class="iSub">
-                                                    <ul>
-                                                        <li><a href="categories.html">Boks</a></li>
-                                                        <li><a href="categories.html">Kikboks</a></li>
-                                                        <li><a href="categories.html">Güləş</a></li>
-                                                        <li><a href="categories.html">Cudo</a></li>
-                                                        <li><a href="categories.html">Karate</a></li>
-                                                        <li><a href="categories.html">Taekvondo</a></li>
-                                                        <li style="border: none"><a href="categories.html">Qaydasız döyüş</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li style="border:none">
-                                                <a href="categories.html">Hovuzlar</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!-- saglamliq -->
-                                <li class="iDrop" style="position: relative">
-                                    <a href="health.html">Sağlamlıq</a>
-                                    <div class="iDown text-left" style="width: 250%">
-                                        <ul>
-                                            <li>
-                                                <a href="programs.html">Məşq proqramları</a>
-                                            </li>
-                                            <li>
-                                                <a href="calculation.html">Sağlamlıq hesablamaları</a>
-                                            </li>
-                                            <li>
-                                                <a href="nutrition.html">Qidalar</a>
-                                            </li>
-                                            <li style="border:none">
-                                                <a href="motivation.html">Motivasiya</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!-- magazalar -->
-                                <li class="iDrop" style="position: relative">
-                                    <a href="shop.html">Mağazalar</a>
-                                    <div class="iDown text-left" style="width: 180%">
-                                        <ul>
-                                            <li>
-                                                <a href="shop.html">İdman geyimləri</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop.html">İdman qidaları</a>
-                                            </li>
-                                            <li style="border:none">
-                                                <a href="shop.html">İdman alətləri</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="contact.html">Əlaqə</a></li>
-        
-                                <!-- user -->
-                                <li class="sign"><a class="iBtn enter">Daxil ol</a></li>
-                                <li class="profile d-none userDrop">
-                                    <a href="#"><i class="fas fa-user"></i></a>
-                                    <div class="userDown text-left d-none">
-                                        <strong>Ad Soyad</strong>
-                                        <div class="promo d-flex justify-content-between">
-                                            <span>Mövcud promokod: </span>
-                                            <span class="code">D4QSE2</span>
+            </div>
+            <div class="row sign-in justify-content-center iSigning d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign text-center">
+                        <form class="iReg">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <input id="pass" type="password" placeholder="Şifrə">
+                            <div class="sbm text-center">
+                                <a href="#" class="iBtn">Daxil ol</a>
+                            </div>
+                        </form>
+                        <p>və ya</p>
+                        <span class="iBtn">Qeydiyyatdan keç</span>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row justify-content-between pt-2">
+                <div class="col-lg-2">
+                    <h1><a href="index.html">idman.az</a></h1>
+                </div>
+                <div class="col-lg-8 text-right d-flex align-items-center">
+                    <ul>
+                        <li><a href="index.html">Ana səhifə</a></li>
+
+                        <!-- kateqoriyalar -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="categories.html">Kateqoriyalar</a>
+                            <div class="iDown text-left">
+                                <ul>
+                                    <li>
+                                        <a href="categories.html">Fitness zalları</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Futbol meydançaları</a>
+                                    </li>
+                                    <li class="iSubDrop">
+                                        <a href="categories.html">Təkbətək idman növləri</a>
+                                        <div class="iSub">
+                                            <ul>
+                                                <li><a href="categories.html">Boks</a></li>
+                                                <li><a href="categories.html">Kikboks</a></li>
+                                                <li><a href="categories.html">Güləş</a></li>
+                                                <li><a href="categories.html">Cudo</a></li>
+                                                <li><a href="categories.html">Karate</a></li>
+                                                <li><a href="categories.html">Taekvondo</a></li>
+                                                <li style="border: none"><a href="categories.html">Qaydasız döyüş</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <a href="#" class="iBtn code">Promokod əldə et</a>
-                                        <a href="#" class="iBtn exit">Çıxış</a>
-                                    </div>
-                                </li> 
-        
-                            </ul>
-                        </div>
-                    </div>
-        
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="categories.html">Hovuzlar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- saglamliq -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="health.html">Sağlamlıq</a>
+                            <div class="iDown text-left" style="width: 250%">
+                                <ul>
+                                    <li>
+                                        <a href="programs.html">Məşq proqramları</a>
+                                    </li>
+                                    <li>
+                                        <a href="calculation.html">Sağlamlıq hesablamaları</a>
+                                    </li>
+                                    <li>
+                                        <a href="nutrition.html">Qidalar</a>
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="motivation.html">Motivasiya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- magazalar -->
+                        <li class="iDrop" style="position: relative">
+                            <a href="shop.html">Mağazalar</a>
+                            <div class="iDown text-left" style="width: 180%">
+                                <ul>
+                                    <li>
+                                        <a href="shop.html">İdman geyimləri</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html">İdman qidaları</a>
+                                    </li>
+                                    <li style="border:none">
+                                        <a href="shop.html">İdman alətləri</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+
+                        <!-- user -->
+                        <li class="sign"><a class="iBtn enter">Daxil ol</a></li>
+                        <li class="profile d-none userDrop">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                            <div class="userDown text-left d-none">
+                                <strong>Ad Soyad</strong>
+                                <div class="promo d-flex justify-content-between">
+                                    <span>Mövcud promokod: </span>
+                                    <span class="code">D4QSE2</span>
+                                </div>
+                                <a href="#" class="iBtn code">Promokod əldə et</a>
+                                <a href="#" class="iBtn exit">Çıxış</a>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
+            </div>
+
+        </div>
     </header>
     <main>
         <section id="home">
@@ -409,26 +408,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- plugin -->
-    <script src="js/typed.js"></script>
+    <!----------------------- plugin ----------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.6.1/vanilla-tilt.js"></script>
-    <script src="js/foxholder.js"></script>
-<!-- bg -->
-<script src="js/plugins/three.min.js"></script>
-      
-<!-- Helpers -->
-<script src="js/plugins/projector.js"></script>
-<script src="js/plugins/canvas-renderer.js"></script>
+    <script src="js/plugins/foxholder.js"></script>
 
-<!-- Visualitzation adjustments -->
-<script src="js/plugins/3d-lines-animation.js"></script>
+    <script src="js/plugins/three.min.js"></script>
+    <script src="js/plugins/projector.js"></script>
+    <script src="js/plugins/canvas-renderer.js"></script>
+    <script src="js/plugins/3d-lines-animation.js"></script>
+    <script src="js/plugins/color.js"></script>
+    <!------------------------------------------------------------>
 
-<!-- Animated background color -->
-<script src="js/plugins/color.js"></script>
-<!-- bg -->
-    <!-- main -->
-    <script src="js/plugin.js"></script>
+    
+    <!----------------------- main ----------------------------->
+    <script src="js/home.js"></script>
     <script src="js/script.js"></script>
+    <!---------------------------------------------------------->
 
 </body>
 

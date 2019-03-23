@@ -378,7 +378,7 @@ header {
     width: 35px;
     height: 35px;
     font-size: 22px;
-    border: 1px solid #bb0000;
+    border: 2px solid #bb0000;
     border-radius: 100%;
     text-align: center;
     line-height: 35px;
@@ -526,19 +526,6 @@ footer {
 
 #shops {
   background: #e6eef2; }
-
-.asdfg .card1 {
-  background: #bb0000; }
-.asdfg .card2 {
-  background: #56ab2f; }
-.asdfg .card3 {
-  background: #000428; }
-.asdfg .card4 {
-  background: #004e92; }
-.asdfg .card5 {
-  background: #c33764; }
-.asdfg .card6 {
-  background: black; }
 
 .scrolled {
   transition: all 0.5s ease-in-out;
