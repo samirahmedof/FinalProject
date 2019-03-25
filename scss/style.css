@@ -154,11 +154,11 @@ section {
       background: #00000033; }
 
 .iHead {
-  margin-bottom: 70px;
   position: relative;
   line-height: 8px; }
   .iHead h2 {
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
   .iHead span {
     width: 70%;
     height: 2px;
@@ -166,6 +166,9 @@ section {
     display: inline-block; }
   .iHead .sec {
     width: 50%; }
+
+.iHead2 h2 {
+  color: #fff; }
 
 .scrolled {
   background: #fff;
@@ -191,10 +194,28 @@ section {
   max-height: 170px !important;
   max-width: initial !important; }
 
-#headBg .container {
-  height: 100%;
-  display: flex;
-  align-items: center; }
+#headBg {
+  padding: 0;
+  height: 70vh;
+  position: relative;
+  background-image: url(../img/bg/ctg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+  #headBg .container {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    #headBg .container .row {
+      width: 100%; }
+    #headBg .container h2 {
+      font-size: 50px; }
+  #headBg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000c2; }
 
 #contact, #moreGallery, #blog {
   padding-top: 120px; }
@@ -258,10 +279,30 @@ header {
           cursor: pointer; }
     header .registration .foxholder-form__input--effect-11 ~ .foxholder-form__helper, header .registration .foxholder-form__textarea--effect-11 ~ .foxholder-form__helper {
       background: #bb0000; }
-  header .col-lg-2 h1 {
+  header .col-lg-2 h1, header .col-lg-3 h1 {
     font-family: 'Audiowide', cursive; }
-    header .col-lg-2 h1 a {
+    header .col-lg-2 h1 a, header .col-lg-3 h1 a {
       color: white; }
+  header .col-lg-2 a, header .col-lg-3 a {
+    color: #bb0000 !important;
+    font-size: 40px;
+    font-family: 'Audiowide', cursive;
+    position: relative; }
+    header .col-lg-2 a span, header .col-lg-3 a span {
+      position: absolute;
+      top: 0; }
+    header .col-lg-2 a .dot, header .col-lg-3 a .dot {
+      right: -70px; }
+    header .col-lg-2 a .chi, header .col-lg-3 a .chi {
+      right: -62px;
+      color: black; }
+    header .col-lg-2 a .idman, header .col-lg-3 a .idman {
+      position: relative; }
+    header .col-lg-2 a .az, header .col-lg-3 a .az {
+      right: -83px;
+      transform: rotate(-90deg);
+      font-size: 23px;
+      top: 10px; }
   header .col-lg-8 ul li {
     display: inline-block;
     margin-left: 20px;
@@ -620,23 +661,8 @@ footer {
     .cntct .cn a:hover, .cntct .cn p:hover {
       color: #bb0000; }
 
-#headBg {
-  padding: 0;
-  height: 60vh;
-  position: relative;
-  background-image: url(../img/ftnss3.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
-  #headBg::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000000c2; }
-  #headBg .type {
-    color: #fff;
-    font-size: 45px; }
+#categoriesIndex {
+  background-image: url(../img/bg/ctg.jpg); }
 
 #mainCategories .categories {
   display: inline-block; }
@@ -648,10 +674,10 @@ footer {
       outline: none; }
 
 .shopIndex {
-  background-image: url(../img/ftnss2.jpg) !important; }
+  background-image: url(../img/bg/shop.jpg) !important; }
 
 .healthIndex {
-  background-image: url(../img/ftnss.jpg) !important; }
+  background-image: url(../img/bg/health.jpg) !important; }
 
 #mainHealth .col-lg-3 {
   transition: all 0.3s;
@@ -670,6 +696,12 @@ footer {
   #mainPrograms .col-lg-3 a h5 {
     font-size: 18px;
     margin: 0; }
+
+.nutritionIndex {
+  background-image: url(../img/bg/ntr.jpg) !important; }
+
+.programIndex {
+  background-image: url(../img/bg/prg.jpg) !important; }
 
 #blog .col-lg-3 {
   border-right: 2px solid #bb0000; }
@@ -697,6 +729,9 @@ footer {
   color: #bb0000;
   font-weight: bold; }
 
+.motivationIndex {
+  background-image: url(../img/bg/motivation.webp) !important; }
+
 #mainMotivation table td {
   vertical-align: middle; }
 #mainMotivation table a {
@@ -708,6 +743,9 @@ footer {
     margin-left: 5px; }
   #mainMotivation table a:hover {
     color: #bb0000; }
+
+.calcIndex {
+  background-image: url(../img/bg/calc.jpg) !important; }
 
 #mainCalc form .radioSpan {
   display: block;
@@ -734,6 +772,31 @@ footer {
     color: #bb0000;
     font-weight: bold;
     font-style: initial; }
+
+#searchBg {
+  padding: 0;
+  overflow: hidden;
+  height: 70vh;
+  position: relative; }
+  #searchBg .container {
+    height: 100%; }
+    #searchBg .container .col-lg-12 {
+      z-index: 1; }
+    #searchBg .container .type span {
+      font-size: 50px;
+      color: white;
+      font-weight: bold; }
+  #searchBg video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute; }
+  #searchBg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000c2;
+    z-index: 1; }
 
 #mainSearch .searching {
   border-left: 2px solid #bb0000; }
@@ -827,25 +890,32 @@ footer {
     opacity: 0; } }
 #moreGallery img {
   max-width: 100%; }
+#moreGallery .view {
+  color: #5b5b5b;
+  font-weight: bold; }
+  #moreGallery .view i {
+    font-size: 18px; }
 
-#moreInfo .sale strong {
-  font-size: 20px;
-  font-style: italic; }
-#moreInfo .sale span {
-  font-size: 25px;
-  color: #bb0000;
-  vertical-align: middle; }
-#moreInfo span.about {
-  color: #bb0000;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  margin-bottom: 15px;
-  display: inline-block;
-  width: 100%;
-  text-align: center; }
-#moreInfo iframe {
-  max-width: 100%; }
+#moreInfo {
+  padding-top: 0; }
+  #moreInfo .sale strong {
+    font-size: 20px;
+    font-style: italic; }
+  #moreInfo .sale span {
+    font-size: 25px;
+    color: #bb0000;
+    vertical-align: middle; }
+  #moreInfo span.about {
+    color: #bb0000;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center; }
+  #moreInfo iframe {
+    max-width: 100%; }
 
 .blockHeader .iPromo strong {
   font-size: 13px;

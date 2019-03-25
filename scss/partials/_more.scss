@@ -1,9 +1,17 @@
 #moreGallery {
     img {
         max-width: 100%;
-    }   
+    } 
+    .view {
+        color: #5b5b5b;
+        font-weight: bold;
+        i {
+            font-size: 18px;
+        }
+    }  
 }
 #moreInfo {
+    padding-top: 0;
     .sale {
         strong {
             font-size: 20px;

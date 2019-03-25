@@ -1,6 +1,6 @@
 //saglamliq
 .healthIndex {
-    background-image: url(../img/ftnss.jpg)!important;
+    background-image: url(../img/bg/health.jpg)!important;
 }
 #mainHealth {
     .col-lg-3 {
@@ -33,7 +33,15 @@
     }
 }
 
+
+//qidalar
+.nutritionIndex {
+    background-image: url(../img/bg/ntr.jpg)!important;
+}
 //proqram bloqu, qida bloqu
+.programIndex {
+    background-image: url(../img/bg/prg.jpg)!important;
+}
 #blog {
     .col-lg-3 {
         border-right: 2px solid $main;
@@ -74,6 +82,9 @@
 }
 
 //motivasiya
+.motivationIndex {
+    background-image: url(../img/bg/motivation.webp)!important;
+}
 #mainMotivation {
     table {
         td {
@@ -95,7 +106,9 @@
 }
 
 // hesablamalar
-
+.calcIndex {
+    background-image: url(../img/bg/calc.jpg)!important;
+}
 #mainCalc {
     form {
         .radioSpan {

@@ -1,8 +1,8 @@
 $(document).ready(function () {
-
+        $('#loader').fadeOut('slow');
         //-----------------Preloader-----------------//
         $(window).on('load', function () {
-                $('#loader').fadeOut('slow');
+                
                 $(window).scrollTop(0);
         });
         //----------------------------------//

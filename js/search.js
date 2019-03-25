@@ -6,7 +6,18 @@ $(document).ready(function () {
     });
     //----------------------------------//
 
-    
+
+    //-----------------Typed plugin-----------------//
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        backSpeed: 20,
+        typeSpeed: 75,
+        loop: true,
+        loopCount: Infinity
+    });
+    //----------------------------------//
+
+
     //----------------Select-option bolmeleri------------------//
     $(".iSelect select").click(function () { //metro ve rayonlarin sechilmesi
         if ($(this).val() == 1) {
