@@ -57,6 +57,7 @@
                             <input id="mail" type="email" placeholder="E-poçt">
                             <input id="pass" type="password" placeholder="Şifrə">
                             <div class="sbm text-center">
+                                <a href="#" class="remember">Şifrəni unutmusunuz?</a>
                                 <a href="#" class="iBtn">Daxil ol</a>
                             </div>
                         </form>
@@ -66,12 +67,30 @@
                     </div>
                 </div>
             </div>
+            <div class="row sign-in justify-content-center iRemember d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign text-center">
+                        <form class="iReg">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <div class="sbm text-center">
+                                <a href="#" class="iBtn mt-2">Təsdiqlə</a>
+                            </div>
+                        </form>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="container">
             <div class="row justify-content-between pt-2">
-                <div class="col-lg-2">
-                    <h1><a href="index.html">idman.az</a></h1>
+                <div class="col-lg-3">
+                    <a href="index.html">
+                        <span class="idman">idman</span>
+                        <span class="chi">chi</span>
+                        <span class="dot">.</span>
+                        <span class="az">az</span>
+                    </a>
                 </div>
                 <div class="col-lg-9 text-right d-flex align-items-center">
                     <ul>
@@ -289,7 +308,7 @@
                         <div class="row mt-5 iCard">
                             <div class="col-lg-12">
                                 <div class="row">
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss.jpg" class="card-img-top">
@@ -302,7 +321,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss2.jpg" class="card-img-top">
@@ -314,7 +333,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss3.jpg" class="card-img-top">
@@ -330,7 +349,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss.jpg" class="card-img-top">
@@ -342,7 +361,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss3.jpg" class="card-img-top">
@@ -357,7 +376,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-5">
+                                    <div class="col-lg-4 mb-5 melumat">
                                         <div class="card">
                                             <div class="photo">
                                                 <img src="img/ftnss2.jpg" class="card-img-top">
@@ -442,10 +461,12 @@
     <!----------------------- plugin ----------------------------->
     <script src="js/plugins/typed.js"></script>
     <script src="js/plugins/foxholder.js"></script>
+    <script src="js/plugins/skroll.min.js"></script>
     <!------------------------------------------------------------>
 
 
     <!----------------------- main ----------------------------->
+    <script src="js/scrollplugin.js"></script>
     <script src="js/search.js"></script>
     <script src="js/script.js"></script>
     <!---------------------------------------------------------->

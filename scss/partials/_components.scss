@@ -4,19 +4,18 @@
     font-size: 18px;
     font-weight: 700;
     border-radius: 5px;
-    transition: all 0.5s;
+    @include transition(0.5s);            
     position: relative;
     border: 1px solid $main;
     z-index: 1;
     &::before {
-        content: "";
-        position: absolute;
+        @extend %bf-af;
         width: 0;
         height: 100%;
         background: $main;
         right: 0;
         top: 0;
-        transition: all 0.5s;
+        @include transition(0.5s);  
         z-index: -1;
     }
     &:hover {
@@ -31,7 +30,7 @@
 
 .iCard {
     .card {
-        transition: all 0.3s;
+        @include transition(0.3s);  
         width: initial;
         height: 100%;
         overflow: hidden;
@@ -40,7 +39,7 @@
             overflow: hidden;
             img {
                 height: 100%;
-                transition: all 0.3s;
+                @include transition(0.3s);  
             }
         }
         p {
@@ -61,8 +60,8 @@
             text-align: center;
             padding: 15px;
             position: absolute;
-            transform: rotate(45deg);
-            font-size: 14px;
+            @include transform(rotate(45deg));  
+            font-size: $size;
             width: 100%;
             right: -35%;
             top: 5%;
@@ -73,14 +72,14 @@
             text-align: center;
             background: $main;
             color: $white;
-            font-size: 14px;
+            font-size: $size;
             width: 100%;
         }
         &:hover {
-            transform: translateY(-8px);
+            @include transform(translateY(-8px));  
             box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.1);
             img {
-                transform: scale(1.1);
+                @include transform(scale(1.1)); 
             }
         }
     }
@@ -92,7 +91,7 @@
         li {
             display: inline-block;
             // border-radius: 100%;
-            transition: all 0.3s;
+            @include transition(0.3s);  
             a {
                 font-size: 15px;
                 width: 35px;
@@ -132,20 +131,19 @@
 }
 .healthCard {
     position: relative;
-    background-color: #fff;
+    background-color: $white;
     text-align: center;
     box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
-    transition: all 0.5s;
+    @include transition(0.5s);  
     overflow: hidden;
     img {
         max-width: 100%;
     }
     .cardBg {
-        transition:  all 0.5s;
+        @include transition(0.5s); 
         &::before {
-            transition:  all 0.5s;
-            content: "";
-            position: absolute;
+            @include transition(0.5s);  
+            @extend %bf-af;
             width: 100%;
             height: 100%;
             background: #0000008f;
@@ -165,7 +163,7 @@
     }
     &:hover {
         .cardBg {
-            transform: scale(1.2);
+            @include transform(scale(1.2));  
             &::before {
                 background: #00000033;
             }
@@ -200,7 +198,7 @@
 .scrolled {
     background: $white;
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease-in-out;
+    @include transition(0.5s);  
     color: $black;
     position: fixed;
     a {
@@ -220,7 +218,7 @@
         li {
             a {
                 &:hover {
-                    transform: translate(5px);
+                    @include transform(translate(5px));  
                     color: $main!important;
                 }
                 
@@ -235,10 +233,6 @@
         }
     }
     
-}
-.iHeight {
-    max-height: 170px!important;
-    max-width: initial!important;
 }
 #headBg {
     padding: 0;
@@ -260,8 +254,7 @@
         }
     }
     &::before {
-        content: "";
-        position: absolute;
+        @extend %bf-af;
         width: 100%;
         height: 100%;
         background: #000000c2;

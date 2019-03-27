@@ -2,8 +2,7 @@ body {
     font-family: $font;
     color: $black;
     background-color: $bg;
-    // font-size: $text;
-    transition: all 0.5s;
+    @include transition(0.5s);  
 }
 a {
     color: $black;
@@ -21,4 +20,22 @@ li {
 }
 section {
     padding: 60px 0px;
+}
+
+//scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $main; 
+}
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($main,10); 
 }

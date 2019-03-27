@@ -1,8 +1,13 @@
+.iBtn::before, .healthCard .cardBg::before, #headBg::before, header .col-lg-9 ul li::before, header .col-lg-9 ul li::after, header .registration .sign-in .sign p::before, header .registration .sign-in .sign p::after, #home .searching::before, #home .searching::after, #home .searching:hover::before, #home .searching:hover::after, #categories .card .photo::before, #contact .exm::before, #searchBg::before {
+  content: "";
+  position: absolute; }
+
 body {
   font-family: "Comfortaa", cursive;
   color: #333;
   background-color: #f8f9fa;
-  transition: all 0.5s; }
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s; }
 
 a {
   color: #333;
@@ -20,25 +25,40 @@ li {
 section {
   padding: 60px 0px; }
 
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bb0000; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #880000; }
+
 .iBtn {
   color: #bb0000;
   padding: 12px 65px;
   font-size: 18px;
   font-weight: 700;
   border-radius: 5px;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s;
   position: relative;
   border: 1px solid #bb0000;
   z-index: 1; }
   .iBtn::before {
-    content: "";
-    position: absolute;
     width: 0;
     height: 100%;
     background: #bb0000;
     right: 0;
     top: 0;
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: all 0.5s;
     z-index: -1; }
   .iBtn:hover {
     color: #fff; }
@@ -48,7 +68,8 @@ section {
       right: auto; }
 
 .iCard .card {
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transform: all 0.3s;
   width: initial;
   height: 100%;
   overflow: hidden; }
@@ -57,7 +78,8 @@ section {
     overflow: hidden; }
     .iCard .card .photo img {
       height: 100%;
-      transition: all 0.3s; }
+      -webkit-transition: all 0.3s;
+      transform: all 0.3s; }
   .iCard .card p {
     font-size: 13px; }
   .iCard .card h5 {
@@ -73,6 +95,8 @@ section {
     text-align: center;
     padding: 15px;
     position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     font-size: 14px;
     width: 100%;
@@ -87,16 +111,21 @@ section {
     font-size: 14px;
     width: 100%; }
   .iCard .card:hover {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
     transform: translateY(-8px);
     box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.1); }
     .iCard .card:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1); }
 
 .pag ul {
   padding: 0; }
   .pag ul li {
     display: inline-block;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     .pag ul li a {
       font-size: 15px;
       width: 35px;
@@ -125,16 +154,17 @@ section {
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s;
   overflow: hidden; }
   .healthCard img {
     max-width: 100%; }
   .healthCard .cardBg {
-    transition: all 0.5s; }
+    -webkit-transition: all 0.5s;
+    transform: all 0.5s; }
     .healthCard .cardBg::before {
-      transition: all 0.5s;
-      content: "";
-      position: absolute;
+      -webkit-transition: all 0.5s;
+      transform: all 0.5s;
       width: 100%;
       height: 100%;
       background: #0000008f;
@@ -149,6 +179,8 @@ section {
     .healthCard h3 a, .healthCard h2 a {
       color: #fff; }
   .healthCard:hover .cardBg {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2); }
     .healthCard:hover .cardBg::before {
       background: #00000033; }
@@ -173,7 +205,8 @@ section {
 .scrolled {
   background: #fff;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s;
   color: #333;
   position: fixed; }
   .scrolled a {
@@ -183,16 +216,14 @@ section {
   .scrolled li::before, .scrolled li::after {
     background: #bb0000 !important; }
   .scrolled .iDown li a:hover {
+    -webkit-transform: translate(5px);
+    -ms-transform: translate(5px);
     transform: translate(5px);
     color: #bb0000 !important; }
   .scrolled .iBtn {
     color: #bb0000 !important; }
     .scrolled .iBtn:hover {
       color: #fff !important; }
-
-.iHeight {
-  max-height: 170px !important;
-  max-width: initial !important; }
 
 #headBg {
   padding: 0;
@@ -211,14 +242,25 @@ section {
     #headBg .container h2 {
       font-size: 50px; }
   #headBg::before {
-    content: "";
-    position: absolute;
     width: 100%;
     height: 100%;
     background: #000000c2; }
 
 #contact, #moreGallery, #blog {
   padding-top: 120px; }
+
+header .col-lg-9 ul li::before, header .col-lg-9 ul li::after {
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s; }
+
+header .registration .sign-in .sign p::before, header .registration .sign-in .sign p::after {
+  width: 35%;
+  height: 1px;
+  background: #bb0000;
+  top: 45%; }
 
 header {
   position: fixed;
@@ -244,6 +286,8 @@ header {
         padding: 60px;
         padding-bottom: 25px;
         position: relative; }
+        header .registration .sign-in .sign .remember {
+          color: #bb0000 !important; }
         header .registration .sign-in .sign i {
           position: absolute;
           right: 2%;
@@ -251,12 +295,14 @@ header {
           font-size: 25px;
           color: #8080807a;
           cursor: pointer;
-          transition: all 0.3s; }
+          -webkit-transition: all 0.3s;
+          transform: all 0.3s; }
           header .registration .sign-in .sign i:hover {
             color: #bb0000; }
         header .registration .sign-in .sign a.iBtn {
           background: #bb0000;
-          color: #fff !important; }
+          color: #fff !important;
+          margin-top: 10px; }
           header .registration .sign-in .sign a.iBtn::before {
             content: ""; }
         header .registration .sign-in .sign p {
@@ -266,31 +312,15 @@ header {
           font-size: 14px;
           position: relative; }
           header .registration .sign-in .sign p::before {
-            position: absolute;
-            content: "";
-            width: 35%;
-            height: 1px;
-            background: #bb0000;
-            left: 0;
-            top: 45%; }
+            left: 0; }
           header .registration .sign-in .sign p::after {
-            position: absolute;
-            content: "";
-            width: 35%;
-            height: 1px;
-            background: #bb0000;
-            right: 0;
-            top: 45%; }
+            right: 0; }
         header .registration .sign-in .sign span.iBtn {
           font-size: 14px;
           padding: 10px;
           cursor: pointer; }
     header .registration .foxholder-form__input--effect-11 ~ .foxholder-form__helper, header .registration .foxholder-form__textarea--effect-11 ~ .foxholder-form__helper {
       background: #bb0000; }
-  header .col-lg-2 h1, header .col-lg-3 h1 {
-    font-family: 'Audiowide', cursive; }
-    header .col-lg-2 h1 a, header .col-lg-3 h1 a {
-      color: white; }
   header .col-lg-2 a, header .col-lg-3 a {
     color: #bb0000 !important;
     font-size: 40px;
@@ -303,11 +333,13 @@ header {
       right: -70px; }
     header .col-lg-2 a .chi, header .col-lg-3 a .chi {
       right: -62px;
-      color: black; }
+      color: #333; }
     header .col-lg-2 a .idman, header .col-lg-3 a .idman {
       position: relative; }
     header .col-lg-2 a .az, header .col-lg-3 a .az {
       right: -83px;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
       font-size: 23px;
       top: 10px; }
@@ -315,12 +347,14 @@ header {
     display: inline-block;
     margin-left: 20px;
     position: relative;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     header .col-lg-9 ul li a {
       color: #fff;
       padding: 5px 0px; }
     header .col-lg-9 ul li .iDown {
-      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transform: all 0.3s;
       position: absolute;
       visibility: hidden;
       width: 260%;
@@ -332,7 +366,8 @@ header {
         padding: 10px;
         font-size: 14px; }
       header .col-lg-9 ul li .iDown li {
-        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transform: all 0.3s;
         width: 100%;
         margin: 0;
         padding: 5px 0px;
@@ -340,9 +375,11 @@ header {
         header .col-lg-9 ul li .iDown li a {
           width: 100%;
           color: #333;
-          transition: all 0.3s; }
+          -webkit-transition: all 0.3s;
+          transform: all 0.3s; }
           header .col-lg-9 ul li .iDown li a::before {
-            transition: all 0.3s; }
+            -webkit-transition: all 0.3s;
+            transform: all 0.3s; }
         header .col-lg-9 ul li .iDown li i {
           color: #bb0000; }
         header .col-lg-9 ul li .iDown li::before {
@@ -350,6 +387,8 @@ header {
         header .col-lg-9 ul li .iDown li::after {
           content: none; }
         header .col-lg-9 ul li .iDown li a:hover {
+          -webkit-transform: translate(5px);
+          -ms-transform: translate(5px);
           transform: translate(5px);
           color: #bb0000; }
           header .col-lg-9 ul li .iDown li a:hover::before {
@@ -365,7 +404,8 @@ header {
     header .col-lg-9 ul li .iSubDrop {
       position: relative; }
       header .col-lg-9 ul li .iSubDrop .iSub {
-        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transform: all 0.3s;
         position: absolute;
         background: #fff;
         box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
@@ -377,7 +417,7 @@ header {
         opacity: 0; }
     header .col-lg-9 ul li .userDown {
       position: absolute;
-      background: white;
+      background: #fff;
       padding: 25px;
       right: 0;
       width: 250px; }
@@ -403,38 +443,29 @@ header {
         margin: 5px 0px; }
       header .col-lg-9 ul li .userDown a.code {
         background: #bb0000;
-        color: white !important; }
-    header .col-lg-9 ul li::before {
-      content: "";
-      position: absolute;
-      width: 0px;
-      height: 2px;
-      background: #fff;
-      transition: all 0.5s; }
+        color: #fff !important; }
     header .col-lg-9 ul li::after {
-      content: "";
-      position: absolute;
-      width: 0px;
-      height: 2px;
-      background: #fff;
       bottom: 0;
-      right: 0;
-      transition: all 0.5s; }
+      right: 0; }
     header .col-lg-9 ul li:hover::before {
       width: 100%; }
     header .col-lg-9 ul li:hover::after {
       width: 100%; }
   header .col-lg-9 ul li.iDrop {
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     header .col-lg-9 ul li.iDrop:hover {
-      transition: all 0.3s; }
+      -webkit-transition: all 0.3s;
+      transform: all 0.3s; }
       header .col-lg-9 ul li.iDrop:hover .iDown {
         visibility: visible;
         opacity: 1; }
   header .col-lg-9 ul li.iSubDrop {
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     header .col-lg-9 ul li.iSubDrop:hover {
-      transition: all 0.3s; }
+      -webkit-transition: all 0.3s;
+      transform: all 0.3s; }
       header .col-lg-9 ul li.iSubDrop:hover .iSub {
         visibility: visible;
         opacity: 1; }
@@ -492,11 +523,35 @@ footer {
       background-color: #333;
       color: #fff;
       border-radius: 100%;
-      transition: all 0.5s; }
+      -webkit-transition: all 0.5s;
+      transform: all 0.5s; }
       footer .col-lg-6 .socials li a i {
         font-size: 15px; }
       footer .col-lg-6 .socials li a:hover {
         background: #bb0000; }
+
+#home .searching::before, #home .searching::after {
+  width: 210px;
+  height: 68px;
+  border: 1px solid #fff;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s; }
+
+#home .searching:hover::before, #home .searching:hover::after {
+  width: 140px;
+  height: 140px;
+  left: 17%;
+  top: -57%;
+  -webkit-animation-iteration-counte: infinite;
+  -moz-animation-iteration-counte: infinite;
+  -o-animation-iteration-counte: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-functionn: linear;
+  -moz-animation-timing-functionn: linear;
+  -o-animation-timing-functionn: linear;
+  animation-timing-function: linear; }
 
 #home {
   padding: 0;
@@ -516,69 +571,82 @@ footer {
     text-decoration: none;
     font-size: 25px;
     border-radius: 5px;
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: all 0.5s;
     position: relative; }
-    #home .searching::before {
-      content: "";
-      position: absolute;
-      width: 210px;
-      height: 68px;
-      border: 1px solid #fff;
-      left: 0;
-      top: 0;
-      transition: all 0.5s; }
-    #home .searching::after {
-      content: "";
-      position: absolute;
-      width: 210px;
-      height: 68px;
-      border: 1px solid #fff;
-      left: 0;
-      top: 0;
-      transition: all 0.5s; }
     #home .searching:hover {
       border: none; }
       #home .searching:hover::before {
-        width: 140px;
-        height: 140px;
-        left: 17%;
-        top: -57%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+        -webkit-animation-name: rotateBefore;
+        -moz-animation-name: rotateBefore;
+        -o-animation-name: rotateBefore;
         animation-name: rotateBefore;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; }
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s; }
       #home .searching:hover::after {
-        width: 140px;
-        height: 140px;
-        left: 17%;
-        top: -57%;
+        -webkit-animation-name: rotateAfter;
+        -moz-animation-name: rotateAfter;
+        -o-animation-name: rotateAfter;
         animation-name: rotateAfter;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; }
+        -webkit-animation-duration: 3s;
+        -moz-animation-duration: 3s;
+        -o-animation-duration: 3s;
+        animation-duration: 3s; }
 @keyframes rotateAfter {
   from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 @keyframes rotateBefore {
   from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@-webkit-keyframes rotateAfter {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes rotateBefore {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
     transform: rotate(-360deg); } }
 #categories {
   background: #e6eef2; }
   #categories .card {
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: all 0.5s;
     overflow: hidden; }
     #categories .card img {
       max-width: 100%;
-      transition: all 0.5s; }
+      -webkit-transition: all 0.5s;
+      transform: all 0.5s; }
     #categories .card h3 {
       margin: 0;
       position: absolute;
-      color: white;
+      color: #fff;
       top: 0;
       text-align: center;
       width: 100%;
@@ -586,17 +654,19 @@ footer {
       font-weight: 700;
       z-index: 1; }
     #categories .card .photo {
-      transition: all 0.5s; }
+      -webkit-transition: all 0.5s;
+      transform: all 0.5s; }
       #categories .card .photo::before {
-        transition: all 0.5s;
-        content: "";
-        position: absolute;
+        -webkit-transition: all 0.5s;
+        transform: all 0.5s;
         width: 100%;
         height: 100%;
         background: #000000c4;
         left: 0;
         z-index: 1; }
     #categories .card:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1); }
       #categories .card:hover .photo::before {
         background: #0000005b; }
@@ -608,7 +678,8 @@ footer {
   background: #e6eef2; }
 
 .scrolled {
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s;
+  transform: all 0.5s;
   position: fixed;
   background: #fff; }
 
@@ -629,14 +700,13 @@ footer {
     margin-right: 10px; }
   #contact .cntct .cn a {
     font-style: italic;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     #contact .cntct .cn a:hover {
       color: #bb0000; }
 #contact .exm {
   position: relative; }
   #contact .exm::before {
-    position: absolute;
-    content: "";
     width: 2px;
     height: 100%;
     left: -5%;
@@ -665,7 +735,8 @@ footer {
     margin: 0; }
   .cntct .cn a, .cntct .cn p {
     font-style: italic;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+    transform: all 0.3s; }
     .cntct .cn a:hover, .cntct .cn p:hover {
       color: #bb0000; }
 
@@ -688,9 +759,12 @@ footer {
   background-image: url(../img/bg/health.jpg) !important; }
 
 #mainHealth .col-lg-3 {
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transform: all 0.3s;
   padding: 10px; }
 #mainHealth .activeHover {
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
   transform: scale(1.12);
   z-index: 99; }
 
@@ -724,7 +798,8 @@ footer {
     #blog .col-lg-3 ul li {
       padding: 10px;
       border-bottom: 1px solid #80808059;
-      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transform: all 0.3s;
       font-weight: 400; }
       #blog .col-lg-3 ul li:hover {
         background: #e6eef2; }
@@ -743,7 +818,8 @@ footer {
 #mainMotivation table td {
   vertical-align: middle; }
 #mainMotivation table a {
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transform: all 0.3s;
   font-weight: bold; }
   #mainMotivation table a i {
     color: #bb0000;
@@ -792,15 +868,13 @@ footer {
       z-index: 1; }
     #searchBg .container .type span {
       font-size: 50px;
-      color: white;
+      color: #fff;
       font-weight: bold; }
   #searchBg video {
     min-width: 100%;
     min-height: 100%;
     position: absolute; }
   #searchBg::before {
-    content: "";
-    position: absolute;
     width: 100%;
     height: 100%;
     background: #000000c2;

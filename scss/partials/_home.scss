@@ -1,3 +1,23 @@
+%home {
+    @extend %bf-af;           
+    width: 210px;
+    height: 68px;
+    border: 1px solid $white;
+    left: 0;
+    top: 0;
+    @include transition(0.5s); 
+}
+
+%home2{
+    @extend %bf-af;
+    width: 140px;
+    height: 140px;
+    left: 17%;
+    top: -57%;
+    @include animation-iteration-count(infinite);
+    @include animation-timing-function(linear);
+}
+
 #home {
     .container {
         height: 100%;
@@ -20,77 +40,80 @@
         text-decoration: none;
         font-size: 25px;
         border-radius: 5px;
-        transition: all 0.5s;
+        @include transition(0.5s);        
         position: relative;
+        
         &::before {
-            content: "";
-            position: absolute;
-            width: 210px;
-            height: 68px;
-            border: 1px solid $white;
-            left: 0;
-            top: 0;
-            transition: all 0.5s;
+            @extend %home;           
         }
         &::after {
-            content: "";
-            position: absolute;
-            width: 210px;
-            height: 68px;
-            border: 1px solid $white;
-            left: 0;
-            top: 0;
-            transition: all 0.5s;
+            @extend %home;           
         }
         &:hover {
             border: none;
+            
             &::before {
-                width: 140px;
-                height: 140px;
-                left: 17%;
-                top: -57%;
-                transform: rotate(45deg);
-                animation-name: rotateBefore;
-                animation-duration: 2s;
-                animation-iteration-count: infinite; 
-                animation-timing-function: linear; 
-    
+                @extend %home2;
+                @include transform(rotate(45deg));
+                @include animation-name(rotateBefore);
+                @include animation-duration(2s);
             }
             &::after {
-                width: 140px;
-                height: 140px;
-                left: 17%;
-                top: -57%;
-                animation-name: rotateAfter;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear; 
+                @extend %home2;
+                @include animation-name(rotateAfter);
+                @include animation-duration(3s);
             }
         }
     }
+    
     @keyframes rotateAfter {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}
+        from {
+            @include transform(rotate(0deg));
+        }
+        to {
+            @include transform(rotate(360deg));            
+        }
     }
     @keyframes rotateBefore {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(-360deg);}
+        from {
+            @include transform(rotate(0deg));
+        }
+        to {
+            @include transform(rotate(-360deg));            
+        }
+    }
+
+    @-webkit-keyframes rotateAfter {
+        from {
+            @include transform(rotate(0deg));
+        }
+        to {
+            @include transform(rotate(360deg));            
+        }
+    }
+    @-webkit-keyframes rotateBefore {
+        from {
+            @include transform(rotate(0deg));
+        }
+        to {
+            @include transform(rotate(-360deg));            
+        }
     }
 }
 
 #categories {
     background: $bg2;
     .card {
-        transition: all 0.5s;
+        @include transition(0.5s);                    
         overflow: hidden;
         img {
             max-width: 100%;
-            transition: all 0.5s;
+            @include transition(0.5s);                        
         }
         h3 {
             margin: 0;
             position: absolute;
-            color: white;
+            color: $white;
             top: 0;
             text-align: center;
             width: 100%;
@@ -99,11 +122,10 @@
             z-index: 1;
         }
         .photo {
-            transition:  all 0.5s;
+            @include transition(0.5s);                        
             &::before {
-                transition:  all 0.5s;
-                content: "";
-                position: absolute;
+                @include transition(0.5s);                        
+                @extend %bf-af;
                 width: 100%;
                 height: 100%;
                 background: #000000c4;
@@ -112,8 +134,8 @@
             }
         }
         &:hover {
-            // transform: translateY(-10px);
-                transform: scale(1.1);
+                @include transform(scale(1.1));            
+            
             .photo {
                 &::before {
                     background: #0000005b;
@@ -131,6 +153,7 @@
         }
     }
 }
+
 #shops {
     background: $bg2;
 }

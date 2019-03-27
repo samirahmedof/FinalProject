@@ -1,3 +1,4 @@
+//axtarish arxa fon
 #searchBg {
     padding: 0;
     overflow: hidden;
@@ -11,7 +12,7 @@
         .type {
             span {
                 font-size: 50px;
-                color: white;
+                color: $white;
                 font-weight: bold;
             }
         }
@@ -22,8 +23,7 @@
         position: absolute;
     }
     &::before {
-        content: "";
-        position: absolute;
+        @extend %bf-af;           
         width: 100%;
         height: 100%;
         background: #000000c2;
@@ -31,6 +31,7 @@
     }
 }
 
+//esas hisse
 #mainSearch {
     .searching {
         border-left: 2px solid $main;
@@ -49,7 +50,7 @@
         display: inline-block;
         select {
             padding: 10px 3px;
-            border-color: #bb0000;
+            border-color: $main;
             border-radius: 5px;
             &:focus {
                 outline: none;

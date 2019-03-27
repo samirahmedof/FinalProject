@@ -1,3 +1,18 @@
+%layout {
+    @extend %bf-af;
+    width: 0px;
+    height: 2px;
+    background: $white; 
+    @include transition(0.5s);            
+}
+
+%layout2 {
+    @extend %bf-af;
+    width: 35%;
+    height: 1px;
+    background: $main;
+    top: 45%;
+}
 //header
 header {
     position: fixed;
@@ -32,6 +47,9 @@ header {
                 padding: 60px;
                 padding-bottom: 25px;
                 position: relative;
+                .remember {
+                    color: $main!important;
+                }
                 i {
                     position: absolute;
                     right: 2%;
@@ -39,7 +57,7 @@ header {
                     font-size: 25px;
                     color: #8080807a;
                     cursor: pointer;
-                    transition: all 0.3s;
+                    @include transition(0.3s);
                     &:hover {
                         color: $main;
                     }
@@ -47,6 +65,7 @@ header {
                 a.iBtn {
                     background: $main;
                     color: $white!important;
+                    margin-top: 10px;
                     &::before {
                         content: "";
                     }
@@ -56,29 +75,20 @@ header {
                     margin-top: 1rem;
                     font-style: italic;
                     font-weight: bold;
-                    font-size: 14px;
+                    font-size: $size;
                     position: relative;
+                    
                     &::before {
-                        position: absolute;
-                        content: "";
-                        width: 35%;
-                        height: 1px;
-                        background: #bb0000;
+                        @extend %layout2;
                         left: 0;
-                        top: 45%;
                     }
                     &::after {
-                        position: absolute;
-                        content: "";
-                        width: 35%;
-                        height: 1px;
-                        background: #bb0000;
+                        @extend %layout2;
                         right: 0;
-                        top: 45%;
                     }
                 }
                 span.iBtn {
-                    font-size: 14px;
+                    font-size: $size;
                     padding: 10px;
                     cursor: pointer;
                 }
@@ -89,12 +99,6 @@ header {
         }
     }
     .col-lg-2 , .col-lg-3{
-        h1 {
-            font-family: 'Audiowide', cursive;
-            a {
-                color: white;
-            }
-        }
         a {
             color: $main!important;
             font-size: 40px;
@@ -109,14 +113,15 @@ header {
             }
             .chi {
                 right: -62px;
-                color: black;
+                color: $black;
             }
             .idman {
                 position: relative;
             }
             .az {
                 right: -83px;
-                transform: rotate(-90deg);
+                @include transform(rotate(-90deg));
+
                 font-size: 23px;
                 top: 10px;
             }
@@ -129,14 +134,15 @@ header {
                 display: inline-block;
                 margin-left: 20px;
                 position: relative;
-                transition: all 0.3s;
+                @include transition(0.3s);
+                
 
                 a {
                     color: $white;
                     padding: 5px 0px;
                 }
                 .iDown {
-                    transition: all 0.3s;
+                    @include transition(0.3s);                    
                     position: absolute;
                     visibility: hidden;
                     width: 260%;
@@ -146,11 +152,11 @@ header {
                     box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
                     ul {
                         padding: 10px;
-                        font-size: 14px;
+                        font-size: $size;
                     }
                     
                     li {
-                        transition: all 0.3s;
+                        @include transition(0.3s);                        
                         width: 100%;
                         margin: 0;
                         padding: 5px 0px;
@@ -158,9 +164,9 @@ header {
                         a {
                             width: 100%;
                             color: $black;
-                            transition: all 0.3s;
+                            @include transition(0.3s);                    
                             &::before {
-                                transition: all 0.3s;
+                                @include transition(0.3s);                    
                             }
                         }
                         i {
@@ -174,7 +180,7 @@ header {
                         }
                         a {
                             &:hover {
-                                transform: translate(5px);
+                                @include transform(translate(5px));
                                 color: $main;
                                 &::before {
                                     content: "\f105";
@@ -198,7 +204,7 @@ header {
                 .iSubDrop {
                     position: relative;
                     .iSub {
-                        transition: all 0.3s;
+                        @include transition(0.3s);                
                         position: absolute;
                         background: $white;
                         box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1);
@@ -212,7 +218,7 @@ header {
                 }
                 .userDown {
                     position: absolute;
-                    background: white;
+                    background: $white;
                     padding: 25px;
                     right: 0;
                     width: 250px;
@@ -238,35 +244,24 @@ header {
                         font-weight: bold;
                     }
                     .iBtn {
-                        font-size: 14px;
+                        font-size: $size;
                         width: 100%;
                         text-align: center;
                         margin: 5px 0px;
                     }
                     a.code {
                         background: $main;
-                        color: white!important;
+                        color: $white!important;
                     }
                 }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 0px;
-                    height: 2px;
-                    background: $white;
-                    transition: all 0.5s;
                 
+                &::before {
+                    @extend %layout;                    
                 }
                 &::after {
-                    content: "";
-                    position: absolute;
-                    width: 0px;
-                    height: 2px;
-                    background: $white; 
+                    @extend %layout;                    
                     bottom: 0;
                     right: 0;
-                    transition: all 0.5s;
                 
                 }
                 &:hover {
@@ -279,9 +274,9 @@ header {
                 }
             }
             li.iDrop {
-                transition: all 0.3s;
+                @include transition(0.3s);        
                 &:hover {
-                transition: all 0.3s;
+                    @include transition(0.3s);        
                     .iDown {
                         visibility: visible;
                         opacity: 1;
@@ -289,9 +284,9 @@ header {
                 }
             }
             li.iSubDrop {
-                transition: all 0.3s;
+                @include transition(0.3s);        
                 &:hover {
-                transition: all 0.3s;
+                    @include transition(0.3s);        
                     .iSub {
                         visibility: visible;
                         opacity: 1;
@@ -326,11 +321,11 @@ header {
             }
         }
         .fa-user {
-            color: #bb0000;
+            color: $main;
             width: 35px;
             height: 35px;
             font-size: 22px;
-            border: 2px solid #bb0000;
+            border: 2px solid $main;
             border-radius: 100%;
             text-align: center;
             line-height: 35px;
@@ -375,7 +370,7 @@ footer {
                     background-color: $black;
                     color: $white;
                     border-radius: 100%;
-                    transition: all 0.5s;
+                    @include transition(0.5s);            
                     i {
                         font-size: 15px;
                     }

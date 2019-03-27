@@ -3,7 +3,7 @@
         max-width: 100%;
     } 
     .view {
-        color: #5b5b5b;
+        color: $gray;
         font-weight: bold;
         i {
             font-size: 18px;
@@ -19,7 +19,7 @@
         }
         span {
             font-size: 25px;
-            color: #bb0000;
+            color: $main;
             vertical-align: middle;
         }
     }
@@ -43,7 +43,7 @@
             font-size: 13px;
             text-align: left;
             display: block;
-            color: #bb0000;
+            color: $main;
             margin-bottom: 10px;
             font-style: italic;
         }

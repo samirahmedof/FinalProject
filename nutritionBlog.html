@@ -57,6 +57,7 @@
                             <input id="mail" type="email" placeholder="E-poçt">
                             <input id="pass" type="password" placeholder="Şifrə">
                             <div class="sbm text-center">
+                                <a href="#" class="remember">Şifrəni unutmusunuz?</a>
                                 <a href="#" class="iBtn">Daxil ol</a>
                             </div>
                         </form>
@@ -66,12 +67,29 @@
                     </div>
                 </div>
             </div>
-
+            <div class="row sign-in justify-content-center iRemember d-none">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="sign text-center">
+                        <form class="iReg">
+                            <input id="mail" type="email" placeholder="E-poçt">
+                            <div class="sbm text-center">
+                                <a href="#" class="iBtn mt-2">Təsdiqlə</a>
+                            </div>
+                        </form>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="row justify-content-between pt-2">
-                <div class="col-lg-2">
-                    <h1><a href="index.html">idman.az</a></h1>
+                <div class="col-lg-3">
+                    <a href="index.html">
+                        <span class="idman">idman</span>
+                        <span class="chi">chi</span>
+                        <span class="dot">.</span>
+                        <span class="az">az</span>
+                    </a>
                 </div>
                 <div class="col-lg-9 text-right d-flex align-items-center">
                     <ul>
@@ -198,19 +216,26 @@
                         </ul>
                     </div>
                     <div class="col-lg-9">
-                        <div class="mainPhoto">
+                        <div class="mainPhoto mekanlar">
                             <img src="img/nutrition/4.jpg">
                         </div>
-                        <h1>Lorem ipsum dolor sit amet</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus et incidunt
-                            alias, exercitationem iusto dicta natus, iste facere aut aliquid impedit nostrum eius
-                            laborum totam provident. Aliquam, consectetur fuga?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quidem? Totam impedit, fugiat
-                            debitis quod eum reiciendis quidem, sapiente ducimus necessitatibus corrupti voluptatum quos
-                            minima facere iste molestias. Repellat, at?</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum non modi et assumenda
-                            debitis, harum veritatis. Dolor, non rem laudantium voluptatibus quas natus, unde nisi error
-                            doloribus iure incidunt?</p>
+                        <div class="mekanlar">
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                ducimus et incidunt
+                                alias, exercitationem iusto dicta natus, iste facere aut aliquid impedit nostrum eius
+                                laborum totam provident. Aliquam, consectetur fuga?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quidem? Totam impedit,
+                                fugiat
+                                debitis quod eum reiciendis quidem, sapiente ducimus necessitatibus corrupti voluptatum
+                                quos
+                                minima facere iste molestias. Repellat, at?</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum non modi et
+                                assumenda
+                                debitis, harum veritatis. Dolor, non rem laudantium voluptatibus quas natus, unde nisi
+                                error
+                                doloribus iure incidunt?</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,10 +286,12 @@
 
     <!----------------------- plugin ----------------------------->
     <script src="js/plugins/foxholder.js"></script>
+    <script src="js/plugins/skroll.min.js"></script>
     <!------------------------------------------------------------>
 
 
     <!----------------------- main ----------------------------->
+    <script src="js/scrollplugin.js"></script>
     <script src="js/script.js"></script>
     <!---------------------------------------------------------->
 

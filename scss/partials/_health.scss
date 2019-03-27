@@ -4,11 +4,11 @@
 }
 #mainHealth {
     .col-lg-3 {
-        transition: all 0.3s;
+        @include transition(0.3s);  
         padding: 10px;
     }
     .activeHover {
-        transform: scale(1.12);
+        @include transform(scale(1.12));  
         z-index: 99;
     }
 }
@@ -57,10 +57,10 @@
             li {
                 padding: 10px;
                 border-bottom: 1px solid #80808059;
-                transition: all 0.3s;
+                @include transition(0.3s);  
                 font-weight: 400;
                 &:hover {
-                    background: #e6eef2;
+                    background: $bg2;
                     a {
                         color: $main;
                     }
@@ -91,7 +91,7 @@
             vertical-align: middle;
         }
         a {
-            transition: all 0.3s;
+            @include transition(0.3s);  
             font-weight: bold;
             i {
                 color: $main;
@@ -128,7 +128,7 @@
     }
     select {
         padding: 10px;
-        border-color: #bb0000;
+        border-color: $main;
         border-radius: 5px;
     }
     .info {
