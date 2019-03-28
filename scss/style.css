@@ -1,4 +1,4 @@
-.iBtn::before, .healthCard .cardBg::before, #headBg::before, header .col-lg-9 ul li::before, header .col-lg-9 ul li::after, header .registration .sign-in .sign p::before, header .registration .sign-in .sign p::after, #home .searching::before, #home .searching::after, #home .searching:hover::before, #home .searching:hover::after, #categories .card .photo::before, #contact .exm::before, #searchBg::before {
+.iBtn::before, .healthCard .cardBg::before, #headBg::before, header .col-lg-8 ul li::before, header .col-lg-8 ul li::after, header .registration .sign-in .sign p::before, header .registration .sign-in .sign p::after, #home .searching::before, #home .searching::after, #home .searching:hover::before, #home .searching:hover::after, #categories .card .photo::before, #contact .exm::before, #searchBg::before {
   content: "";
   position: absolute; }
 
@@ -249,7 +249,7 @@ section {
 #contact, #moreGallery, #blog {
   padding-top: 120px; }
 
-header .col-lg-9 ul li::before, header .col-lg-9 ul li::after {
+header .col-lg-8 ul li::before, header .col-lg-8 ul li::after {
   width: 0px;
   height: 2px;
   background: #fff;
@@ -261,6 +261,23 @@ header .registration .sign-in .sign p::before, header .registration .sign-in .si
   height: 1px;
   background: #bb0000;
   top: 45%; }
+
+header .col-lg-3 a, footer .col-lg-2 a {
+  color: #bb0000 !important;
+  font-family: 'Audiowide', cursive;
+  position: relative; }
+  header .col-lg-3 a span, footer .col-lg-2 a span {
+    position: absolute;
+    top: 0; }
+  header .col-lg-3 a .chi, footer .col-lg-2 a .chi {
+    color: #333; }
+  header .col-lg-3 a .idman, footer .col-lg-2 a .idman {
+    position: relative; }
+  header .col-lg-3 a .az, footer .col-lg-2 a .az {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 10px; }
 
 header {
   position: fixed;
@@ -321,38 +338,25 @@ header {
           cursor: pointer; }
     header .registration .foxholder-form__input--effect-11 ~ .foxholder-form__helper, header .registration .foxholder-form__textarea--effect-11 ~ .foxholder-form__helper {
       background: #bb0000; }
-  header .col-lg-2 a, header .col-lg-3 a {
-    color: #bb0000 !important;
-    font-size: 40px;
-    font-family: 'Audiowide', cursive;
-    position: relative; }
-    header .col-lg-2 a span, header .col-lg-3 a span {
-      position: absolute;
-      top: 0; }
-    header .col-lg-2 a .dot, header .col-lg-3 a .dot {
+  header .col-lg-3 a {
+    font-size: 40px; }
+    header .col-lg-3 a .dot {
       right: -70px; }
-    header .col-lg-2 a .chi, header .col-lg-3 a .chi {
-      right: -62px;
-      color: #333; }
-    header .col-lg-2 a .idman, header .col-lg-3 a .idman {
-      position: relative; }
-    header .col-lg-2 a .az, header .col-lg-3 a .az {
-      right: -83px;
-      -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      transform: rotate(-90deg);
+    header .col-lg-3 a .chi {
+      right: -62px; }
+    header .col-lg-3 a .az {
       font-size: 23px;
-      top: 10px; }
-  header .col-lg-9 ul li {
+      right: -83px; }
+  header .col-lg-8 ul li {
     display: inline-block;
     margin-left: 20px;
     position: relative;
     -webkit-transition: all 0.3s;
     transform: all 0.3s; }
-    header .col-lg-9 ul li a {
+    header .col-lg-8 ul li a {
       color: #fff;
       padding: 5px 0px; }
-    header .col-lg-9 ul li .iDown {
+    header .col-lg-8 ul li .iDown {
       -webkit-transition: all 0.3s;
       transform: all 0.3s;
       position: absolute;
@@ -362,36 +366,36 @@ header {
       opacity: 0;
       background: #fff;
       box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.1); }
-      header .col-lg-9 ul li .iDown ul {
+      header .col-lg-8 ul li .iDown ul {
         padding: 10px;
         font-size: 14px; }
-      header .col-lg-9 ul li .iDown li {
+      header .col-lg-8 ul li .iDown li {
         -webkit-transition: all 0.3s;
         transform: all 0.3s;
         width: 100%;
         margin: 0;
         padding: 5px 0px;
         border-bottom: 1px solid #80808059; }
-        header .col-lg-9 ul li .iDown li a {
+        header .col-lg-8 ul li .iDown li a {
           width: 100%;
           color: #333;
           -webkit-transition: all 0.3s;
           transform: all 0.3s; }
-          header .col-lg-9 ul li .iDown li a::before {
+          header .col-lg-8 ul li .iDown li a::before {
             -webkit-transition: all 0.3s;
             transform: all 0.3s; }
-        header .col-lg-9 ul li .iDown li i {
+        header .col-lg-8 ul li .iDown li i {
           color: #bb0000; }
-        header .col-lg-9 ul li .iDown li::before {
+        header .col-lg-8 ul li .iDown li::before {
           content: none; }
-        header .col-lg-9 ul li .iDown li::after {
+        header .col-lg-8 ul li .iDown li::after {
           content: none; }
-        header .col-lg-9 ul li .iDown li a:hover {
+        header .col-lg-8 ul li .iDown li a:hover {
           -webkit-transform: translate(5px);
           -ms-transform: translate(5px);
           transform: translate(5px);
           color: #bb0000; }
-          header .col-lg-9 ul li .iDown li a:hover::before {
+          header .col-lg-8 ul li .iDown li a:hover::before {
             content: "\f105";
             font-family: 'Font Awesome 5 Free';
             margin-left: 10px;
@@ -401,9 +405,9 @@ header {
             left: -20px;
             font-size: 12px;
             font-weight: 900; }
-    header .col-lg-9 ul li .iSubDrop {
+    header .col-lg-8 ul li .iSubDrop {
       position: relative; }
-      header .col-lg-9 ul li .iSubDrop .iSub {
+      header .col-lg-8 ul li .iSubDrop .iSub {
         -webkit-transition: all 0.3s;
         transform: all 0.3s;
         position: absolute;
@@ -415,76 +419,76 @@ header {
         width: 100%;
         visibility: hidden;
         opacity: 0; }
-    header .col-lg-9 ul li .userDown {
+    header .col-lg-8 ul li .userDown {
       position: absolute;
       background: #fff;
       padding: 25px;
       right: 0;
       width: 250px; }
-      header .col-lg-9 ul li .userDown .exit {
+      header .col-lg-8 ul li .userDown .exit {
         color: #bb0000 !important; }
-        header .col-lg-9 ul li .userDown .exit:hover {
+        header .col-lg-8 ul li .userDown .exit:hover {
           color: #fff !important; }
-      header .col-lg-9 ul li .userDown strong {
+      header .col-lg-8 ul li .userDown strong {
         width: 100%;
         display: inline-block;
         font-size: 18px; }
-      header .col-lg-9 ul li .userDown .promo {
+      header .col-lg-8 ul li .userDown .promo {
         font-size: 13px;
         margin: 10px 0px; }
-      header .col-lg-9 ul li .userDown span.code {
+      header .col-lg-8 ul li .userDown span.code {
         font-style: italic;
         color: #bb0000;
         font-weight: bold; }
-      header .col-lg-9 ul li .userDown .iBtn {
+      header .col-lg-8 ul li .userDown .iBtn {
         font-size: 14px;
         width: 100%;
         text-align: center;
         margin: 5px 0px; }
-      header .col-lg-9 ul li .userDown a.code {
+      header .col-lg-8 ul li .userDown a.code {
         background: #bb0000;
         color: #fff !important; }
-    header .col-lg-9 ul li::after {
+    header .col-lg-8 ul li::after {
       bottom: 0;
       right: 0; }
-    header .col-lg-9 ul li:hover::before {
+    header .col-lg-8 ul li:hover::before {
       width: 100%; }
-    header .col-lg-9 ul li:hover::after {
+    header .col-lg-8 ul li:hover::after {
       width: 100%; }
-  header .col-lg-9 ul li.iDrop {
+  header .col-lg-8 ul li.iDrop {
     -webkit-transition: all 0.3s;
     transform: all 0.3s; }
-    header .col-lg-9 ul li.iDrop:hover {
+    header .col-lg-8 ul li.iDrop:hover {
       -webkit-transition: all 0.3s;
       transform: all 0.3s; }
-      header .col-lg-9 ul li.iDrop:hover .iDown {
+      header .col-lg-8 ul li.iDrop:hover .iDown {
         visibility: visible;
         opacity: 1; }
-  header .col-lg-9 ul li.iSubDrop {
+  header .col-lg-8 ul li.iSubDrop {
     -webkit-transition: all 0.3s;
     transform: all 0.3s; }
-    header .col-lg-9 ul li.iSubDrop:hover {
+    header .col-lg-8 ul li.iSubDrop:hover {
       -webkit-transition: all 0.3s;
       transform: all 0.3s; }
-      header .col-lg-9 ul li.iSubDrop:hover .iSub {
+      header .col-lg-8 ul li.iSubDrop:hover .iSub {
         visibility: visible;
         opacity: 1; }
-  header .col-lg-9 .sign .iBtn {
+  header .col-lg-8 .sign .iBtn {
     cursor: pointer;
     font-size: 16px;
     padding: 5px 5px;
     color: #bb0000;
     font-weight: bold; }
-    header .col-lg-9 .sign .iBtn::before, header .col-lg-9 .sign .iBtn::after {
+    header .col-lg-8 .sign .iBtn::before, header .col-lg-8 .sign .iBtn::after {
       content: none; }
-    header .col-lg-9 .sign .iBtn:hover {
+    header .col-lg-8 .sign .iBtn:hover {
       background: #bb0000;
       color: #fff; }
-  header .col-lg-9 .sign::before, header .col-lg-9 .sign::after {
+  header .col-lg-8 .sign::before, header .col-lg-8 .sign::after {
     content: none; }
-  header .col-lg-9 .profile::before, header .col-lg-9 .profile::after {
+  header .col-lg-8 .profile::before, header .col-lg-8 .profile::after {
     content: none; }
-  header .col-lg-9 .fa-user {
+  header .col-lg-8 .fa-user {
     color: #bb0000;
     width: 35px;
     height: 35px;
@@ -498,15 +502,22 @@ header {
 footer {
   border-top: 1px solid #80808059;
   padding: 20px 0px; }
-  footer .col-lg-6 h4 {
-    font-family: 'Audiowide', cursive !important;
-    display: inline-block; }
-    footer .col-lg-6 h4 a {
-      color: #bb0000; }
-  footer .col-lg-6 p {
-    display: inline-block;
-    font-size: 13px;
-    margin-left: 15px; }
+  footer .col-lg-4 {
+    display: flex;
+    align-items: center; }
+    footer .col-lg-4 p {
+      font-size: 13px;
+      margin: 0; }
+  footer .col-lg-2 a {
+    font-size: 23px; }
+    footer .col-lg-2 a .dot {
+      right: -40px; }
+    footer .col-lg-2 a .az {
+      right: -47px;
+      font-size: 13px;
+      top: 5px; }
+    footer .col-lg-2 a .chi {
+      right: -36px; }
   footer .col-lg-6 .socials ul {
     padding: 0; }
   footer .col-lg-6 .socials li {
@@ -567,7 +578,7 @@ footer {
     max-width: 100%; }
   #home .searching {
     color: #fff;
-    padding: 15px 70px;
+    padding: 15px 60px;
     text-decoration: none;
     font-size: 25px;
     border-radius: 5px;
@@ -752,9 +763,6 @@ footer {
     #mainCategories .categories select:focus {
       outline: none; }
 
-.shopIndex {
-  background-image: url(../img/bg/shop.jpg) !important; }
-
 .healthIndex {
   background-image: url(../img/bg/health.jpg) !important; }
 
@@ -827,6 +835,8 @@ footer {
     margin-left: 5px; }
   #mainMotivation table a:hover {
     color: #bb0000; }
+#mainMotivation table audio:focus {
+  outline: none; }
 
 .calcIndex {
   background-image: url(../img/bg/calc.jpg) !important; }
@@ -849,7 +859,7 @@ footer {
 #mainCalc .info {
   border-left: 2px solid #bb0000; }
   #mainCalc .info span {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     font-style: italic; }
   #mainCalc .info .calc {

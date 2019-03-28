@@ -1,13 +1,14 @@
 $(document).ready(function () {
-    var say=0;
-    $("table tr .eminem").click(function(){
-        say++;
-        if (say%2==0)
-        $(".au1").trigger('play');
-        else
-        $(".au1").trigger('pause');
-
-    })
+    var A=$("#mainMotivation table audio");
     
-
+    $("#mainMotivation table audio").on("play",function(){
+        $(this).addClass("playing");
+        for (var i=0; i<A.length; i++) {
+            if (!($(A[i]).hasClass("playing"))) {
+                A[i].pause();
+                A[i].currentTime=0;
+            }
+        }
+        $(this).removeClass("playing");
+    })
 })

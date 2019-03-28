@@ -63,23 +63,26 @@ $(document).ready(function () {
         })
         $("header .registration .fa-times").click(function(){ //alerti silmek
                 if($("header .registration .alert")) {
-                   $("header .registration .alert").remove();    
+                   $("header .registration .alert").remove();
+                   say=0;    
                 }           
            })
         //-------------------------------------------------//
 
         
+        var say2=0;
         //------------------------Shifreni unutmusuz?-------------------------//
         $("header .iSigning .iReg .remember").click(function () { //daxilolmaqdan kecid
                 $(this).parents(".iSigning").addClass("d-none");
                 $(this).parents(".registration").find(".iRemember").removeClass("d-none");
+
         })
         $("header .iRemember .iReg .iBtn").click(function (e) { //maile shifreni gondermek
                 e.preventDefault();
                 if ((!($(this).parents(".iReg").find("#mail").val()))) {
-                        if (say == 0) {
+                        if (say2 == 0) {
                                 $(this).parent().before("<div class='alert alert-danger' role='alert' style='padding:10px; font-size:14px'>E-poçt ünvanı yanlışdır</div>")
-                                say++;
+                                say2++;
                         }
                 }
                 else {
@@ -91,6 +94,12 @@ $(document).ready(function () {
                         })
                 }
         })
+        $("header .registration .fa-times").click(function(){ //alerti silmek
+                if($("header .registration .alert")) {
+                   $("header .registration .alert").remove();
+                   say2=0;    
+                }           
+           })
         //-------------------------------------------------//
 
 
@@ -115,7 +124,7 @@ $(document).ready(function () {
         // });
 
         //formlarin duzgun doldurulmasi
-        var say = 0;
+        var say3 = 0;
         $("header .iRegistration .iReg .iBtn").click(function (e) {
                 e.preventDefault();
                 var name = $(this).parents(".iReg").find("#name").val();
@@ -132,13 +141,13 @@ $(document).ready(function () {
                         say++;
                 }
                 else {
-                        say = 0;
+                        say3 = 0;
                         if (pass != pass2) {
-                                say++;
+                                say3++;
                                 alert = "Şifrəni düzgün daxil edin";
                         }
                         else {
-                                say = 0;
+                                say3 = 0;
                                 // if (day>31||day<1||month>12||month<1||year>2018||year<1900) {
                                 //         say++;
                                 //         alert="Doğum tarixini düzgün daxil edin"
@@ -157,7 +166,7 @@ $(document).ready(function () {
                         }
                 }
 
-                if (say == 0) {
+                if (say3 == 0) {
                         $("header .registration .iRegistration .sign").append("<div class='alert alert-success' role='alert' style='padding:10px; font-size:14px'>Siz qeydiyyatdan keçdiniz</div>");
                         $(this).parents("form").remove();
 

@@ -13,6 +13,26 @@
     background: $main;
     top: 45%;
 }
+%logo {
+        color: $main!important;
+        font-family: 'Audiowide', cursive;
+        position: relative;
+        span {
+            position: absolute;
+            top: 0;
+        }
+        
+        .chi {
+            color: $black;
+        }
+        .idman {
+            position: relative;
+        }
+        .az {
+            @include transform(rotate(-90deg));
+            top: 10px;
+        }    
+}
 //header
 header {
     position: fixed;
@@ -98,37 +118,24 @@ header {
             background: $main;
         }
     }
-    .col-lg-2 , .col-lg-3{
+    .col-lg-3{
         a {
-            color: $main!important;
+            @extend %logo;
             font-size: 40px;
-            font-family: 'Audiowide', cursive;
-            position: relative;
-            span {
-                position: absolute;
-                top: 0;
-            }
             .dot {
                 right: -70px;
             }
             .chi {
                 right: -62px;
-                color: $black;
-            }
-            .idman {
-                position: relative;
             }
             .az {
-                right: -83px;
-                @include transform(rotate(-90deg));
-
                 font-size: 23px;
-                top: 10px;
+                right: -83px;
             }
         }
         
     }
-    .col-lg-9{
+    .col-lg-8{
         ul {
             li {
                 display: inline-block;
@@ -339,19 +346,32 @@ header {
 footer {
     border-top: 1px solid #80808059;
     padding: 20px 0px;
-    .col-lg-6  {
-        h4 {
-            font-family: 'Audiowide', cursive !important;
-            display: inline-block;
-            a {
-                color: $main;
+    .col-lg-4 {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 13px;
+            margin: 0;
+        }
+    }
+    .col-lg-2  {
+        a {
+            @extend %logo;
+            font-size: 23px;
+            .dot {
+                right: -40px;
+            }
+            .az {
+                right: -47px;
+                font-size: 13px;
+                top: 5px;
+            }
+            .chi {
+                right: -36px;
             }
         }
-        p {
-            display: inline-block;
-            font-size: 13px;
-            margin-left: 15px;
-        }
+    }
+    .col-lg-6 {
         .socials {
             ul {
                 padding: 0;
