@@ -232,7 +232,13 @@
             color: $white!important;
         }
     }
-    
+    .menu {
+        .menuIcon {
+            span {
+                background: $main!important;
+            }
+        }
+    }
 }
 #headBg {
     padding: 0;
@@ -263,4 +269,8 @@
 
 #contact , #moreGallery, #blog {
     padding-top: 120px; 
+}
+
+.stopScrolling {
+    overflow: hidden;
 }

@@ -11,6 +11,57 @@ $(document).ready(function () {
         });
         //----------------------------------//
 
+        //---------------Kicik ekranlarda menu uchun-------------------//
+        $("header .col-lg-9 .menuIcon").click(function () {
+                $(this).toggleClass("menuOpen");
+                if ($(window).scrollTop() < 100) {
+                        $(".headerMain").toggleClass("scrolled")
+                }
+
+                $(".iMenu").toggleClass("menuActive");
+                $("body").toggleClass("stopScrolling");
+
+        })
+        $(window).resize(function () { //pencerenin olcusu deyisende menu itmesi uchun
+                if ($(window).width() > 992) {
+                        $("header .col-lg-9 .menuIcon").removeClass("menuOpen");
+                        $(".iMenu").removeClass("menuActive");
+                        if ($(window).scrollTop() < 100 && $(".headerMain").hasClass("scrolled")) {
+                                $(".headerMain").removeClass("scrolled")
+                        }
+                        if ($("body").hasClass("stopScrolling")) {
+                                $("body").removeClass("stopScrolling")
+                        }
+                }
+        });
+
+        //----------------------------------//
+
+        //----------------Menu drop-down------------------//
+        $(".iMenu .fa-sort-down").click(function () {
+                var A = $(this).next();
+                $(this).toggleClass("fa-sort-up")
+                if (!($(this).next().hasClass("downActive"))) {
+                        $(this).next().addClass("downActive");
+                }
+                else {
+                        $(this).next().removeClass("downActive");
+
+                }
+
+                $("header .col-lg-9 .menuIcon").click(function () {
+                        for (var i = 0; i < A.length; i++) {
+                                if (A.hasClass("downActive")) {
+                                        A.removeClass("downActive");
+                                }
+                        }
+                        $(".iMenu .fa-sort-up").removeClass("fa-sort-up");
+                })
+
+        })
+        //----------------------------------//
+
+
 
         //-----------------Daxilolma-----------------//
         $(".sign .enter").click(function () { //daxilolma button'u
@@ -58,19 +109,21 @@ $(document).ready(function () {
 
                         $("header .container li.sign").addClass("d-none");
                         $("header .container li.profile").removeClass("d-none");
+                        $(".iMenu li.sign").addClass("d-none");
+                        $(".iMenu li.profile").removeClass("d-none");
                         say = 0;
                 }
         })
-        $("header .registration .fa-times").click(function(){ //alerti silmek
-                if($("header .registration .alert")) {
-                   $("header .registration .alert").remove();
-                   say=0;    
-                }           
-           })
+        $("header .registration .fa-times").click(function () { //alerti silmek
+                if ($("header .registration .alert")) {
+                        $("header .registration .alert").remove();
+                        say = 0;
+                }
+        })
         //-------------------------------------------------//
 
-        
-        var say2=0;
+
+        var say2 = 0;
         //------------------------Shifreni unutmusuz?-------------------------//
         $("header .iSigning .iReg .remember").click(function () { //daxilolmaqdan kecid
                 $(this).parents(".iSigning").addClass("d-none");
@@ -89,17 +142,17 @@ $(document).ready(function () {
                         $("header .iRemember .sign").empty();
                         $("header .iRemember .sign").append("<i class='fas fa-times'></i>");
                         $("header .iRemember .sign").append("<div class='alert alert-success' role='alert' style='padding:10px; font-size:14px'>Şifrə E-poçt ünvanınıza göndərildi</div>");
-                        $("header .iRemember .sign .fa-times").click(function(){
+                        $("header .iRemember .sign .fa-times").click(function () {
                                 location.reload();
                         })
                 }
         })
-        $("header .registration .fa-times").click(function(){ //alerti silmek
-                if($("header .registration .alert")) {
-                   $("header .registration .alert").remove();
-                   say2=0;    
-                }           
-           })
+        $("header .registration .fa-times").click(function () { //alerti silmek
+                if ($("header .registration .alert")) {
+                        $("header .registration .alert").remove();
+                        say2 = 0;
+                }
+        })
         //-------------------------------------------------//
 
 
