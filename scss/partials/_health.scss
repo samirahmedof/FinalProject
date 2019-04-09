@@ -43,8 +43,8 @@
     background-image: url(../img/bg/prg.jpg)!important;
 }
 #blog {
-    .col-lg-3 {
-        border-right: 2px solid $main;
+    .col-md-3 {
+        border-left: 2px solid $main;
         h4 {
             font-weight: bold;
             color: $main;
@@ -68,7 +68,7 @@
             }
         }
     }
-    .col-lg-9 {
+    .col-md-9 {
         img {
             max-width: 100%;
         }
@@ -147,7 +147,7 @@
             color: $main;
             font-weight: bold;
             font-style: initial;
-
+            text-align: right;
         }
     }
 }

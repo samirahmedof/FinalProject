@@ -402,7 +402,8 @@ header {
         padding-bottom: 25px;
         position: relative; }
         header .registration .sign-in .sign .remember {
-          color: #bb0000 !important; }
+          color: #bb0000 !important;
+          display: block; }
         header .registration .sign-in .sign i {
           position: absolute;
           right: 2%;
@@ -900,7 +901,8 @@ footer {
   #mainCategories .categories select {
     padding: 10px;
     border-color: #bb0000;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-bottom: 10px; }
     #mainCategories .categories select:focus {
       outline: none; }
 
@@ -934,29 +936,29 @@ footer {
 .programIndex {
   background-image: url(../img/bg/prg.jpg) !important; }
 
-#blog .col-lg-3 {
-  border-right: 2px solid #bb0000; }
-  #blog .col-lg-3 h4 {
+#blog .col-md-3 {
+  border-left: 2px solid #bb0000; }
+  #blog .col-md-3 h4 {
     font-weight: bold;
     color: #bb0000;
     border-bottom: 1px solid;
     padding: 10px;
     text-align: center; }
-  #blog .col-lg-3 ul {
+  #blog .col-md-3 ul {
     padding: 0; }
-    #blog .col-lg-3 ul li {
+    #blog .col-md-3 ul li {
       padding: 10px;
       border-bottom: 1px solid #80808059;
       -webkit-transition: all 0.3s;
       transform: all 0.3s;
       font-weight: 400; }
-      #blog .col-lg-3 ul li:hover {
+      #blog .col-md-3 ul li:hover {
         background: #e6eef2; }
-        #blog .col-lg-3 ul li:hover a {
+        #blog .col-md-3 ul li:hover a {
           color: #bb0000; }
-#blog .col-lg-9 img {
+#blog .col-md-9 img {
   max-width: 100%; }
-#blog .col-lg-9 h1 {
+#blog .col-md-9 h1 {
   margin: 25px 0px;
   color: #bb0000;
   font-weight: bold; }
@@ -1006,7 +1008,8 @@ footer {
   #mainCalc .info .calc {
     color: #bb0000;
     font-weight: bold;
-    font-style: initial; }
+    font-style: initial;
+    text-align: right; }
 
 #searchBg {
   padding: 0;
@@ -1044,7 +1047,8 @@ footer {
   #mainSearch .categories select {
     padding: 10px 3px;
     border-color: #bb0000;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-bottom: 10px; }
     #mainSearch .categories select:focus {
       outline: none; }
 #mainSearch .col-lg-9 .card {
@@ -1171,24 +1175,78 @@ footer {
     #about .about p {
       text-indent: 50px; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   header .col-lg-9 .desktop {
     display: none; }
   header .col-lg-9 .menu {
     display: block; }
 
+  #headBg {
+    height: 55vh; }
+    #headBg .container h2 {
+      font-size: 35px; }
+
+  #mainSearch .searching {
+    display: none; }
+
+  #mainCalc .info span {
+    font-size: 16px; }
+
+  #mainMotivation table td {
+    font-size: 15px; }
+  #mainMotivation audio {
+    max-width: 230px; }
+
+  #blog .col-md-9 .mekanlar h1 {
+    font-size: 30px; }
+
+  #contact .cntct a {
+    font-size: 12px; }
+
+  #moreInfo .cntct .cn p {
+    font-size: 14px; }
+
   footer .copy {
     text-align: right; }
   footer .socials {
     text-align: center !important; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #health {
     display: none; }
 
+  #blog .col-md-3 {
+    border: none; }
+  #blog .col-md-9 .mekanlar h1 {
+    font-size: 25px; }
+
+  #mainMotivation table td {
+    font-size: 14px; }
+  #mainMotivation audio {
+    max-width: 150px; }
+
+  #moreInfo .cntct .cn p {
+    font-size: 13px; }
+
   footer .copy p {
     font-size: 10px; } }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #categories .card h3 {
-    font-size: 27px; } }
+    font-size: 27px; }
+
+  #mainMotivation table td {
+    font-size: 13px; }
+  #mainMotivation audio {
+    max-width: 110px; }
+
+  #mainCalc .info span {
+    font-size: 14px; }
+
+  #moreInfo .cntct .cn p {
+    font-size: 12px; }
+
+  #moreGallery .view i {
+    font-size: 14px; }
+  #moreGallery .view span {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

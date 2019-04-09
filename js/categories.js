@@ -27,5 +27,16 @@ $(document).ready(function () {
             }
         }
     });
+
+    $("select.kombat").on('change', function () { //magaza novleri
+        if (this.value == 5) {
+            $(".shop-type").removeClass("d-none");
+        }
+        else {
+            if (!($(".shop-type").hasClass("d-none"))) {
+                $(".shop-type").addClass("d-none");
+            }
+        }
+    });
     //----------------------------------//
 })
