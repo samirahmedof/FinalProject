@@ -191,7 +191,7 @@ $(document).ready(function () {
                 var alert;
                 if (!name || !sur || !mail || !pass || !pass2) {
                         alert = "Məlumatları tam doldurun";
-                        say++;
+                        say3++;
                 }
                 else {
                         say3 = 0;
